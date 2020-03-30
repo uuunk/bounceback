@@ -4,6 +4,7 @@ import {Helmet} from 'react-helmet'
 import tw from "twin.macro";
 import Nav from "./Nav";
 import './Home.scss';
+import { Link } from 'react-router-dom';
 
 const Container = tw.div``;
 
@@ -103,7 +104,7 @@ export default class Home extends React.Component {
     searchResults = () => {
         const pageData = this.state.cms.data || []
         const cards = pageData.map(page => (
-            <a href={"/grants/"+page.slug}>
+            <Link to={"/grants/"+page.slug}>
                 <Card>
                     <CardImage src={page.fields.hero_image}/>
                     <CardText>
@@ -111,7 +112,7 @@ export default class Home extends React.Component {
                         <CardTitle>{page.fields.seo_title}</CardTitle>
                     </CardText>
                 </Card>
-            </a>
+            </Link>
         ));
 
         return (

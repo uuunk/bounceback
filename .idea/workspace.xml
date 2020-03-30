@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1461c60-e928-45aa-99e1-650b0f0cef4b" name="Default Changelist" comment="setup and rough sketch of home page">
-      <change afterPath="$PROJECT_DIR$/src/Grant.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Home.scss" afterDir="false" />
+    <list default="true" id="a1461c60-e928-45aa-99e1-650b0f0cef4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/babel-plugin-macros.config.js " beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/butter-client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/butter-client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585332309180</updated>
-      <workItem from="1585332312230" duration="41314000" />
+      <workItem from="1585332312230" duration="42462000" />
     </task>
     <task id="LOCAL-00001" summary="setup and rough sketch of home page">
       <created>1585408985463</created>
@@ -93,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585408985463</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="pile of changes">
+      <created>1585588867991</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585588867991</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,17 +94,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="setup and rough sketch of home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup and rough sketch of home page" />
+    <MESSAGE value="pile of changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="pile of changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585338855957">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585338855957" />
-    <state x="479" y="162" width="1088" height="795" key="CommitChangelistDialog2" timestamp="1585586786601">
+    <state x="479" y="162" width="1088" height="795" key="CommitChangelistDialog2" timestamp="1585588867828">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="479" y="162" width="1088" height="795" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585586786601" />
+    <state x="479" y="162" width="1088" height="795" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585588867828" />
+    <state x="756" y="460" key="Github.ShareDialog" timestamp="1585589676334">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="756" y="460" key="Github.ShareDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1585589676334" />
     <state width="875" height="197" key="GridCell.Tab.0.bottom" timestamp="1585587403228">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -132,10 +130,14 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1585334214442" />
-    <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585408876884">
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1585589655186">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585408876884" />
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585589655186" />
+    <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585595602625">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585595602625" />
     <state x="554" y="317" width="683" height="486" key="find.popup" timestamp="1585528358095">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
