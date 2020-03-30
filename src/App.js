@@ -1,15 +1,15 @@
 import React from 'react';
-import './App.css';
+import './Home.scss';
 import Home from "./Home";
 import Nav from "./Nav";
 
 function App() {
-  return (
-    <div className="App">
-        <Nav/>
-        <Home className="container"/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Nav/>
+            <Home/>
+        </div>
+    );
 }
 
 export default App;
