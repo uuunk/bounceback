@@ -88,10 +88,10 @@ export default class Home extends React.Component {
                         <DropDownLabel>Type Of Relief</DropDownLabel>
                         <DropDownSelect value={this.state.form.typeOfRelief} name="typeOfRelief" onChange={this.handleInputChange}>
                             <option value="" disabled selected>Select Resource</option>
-                            <option value="emergencyRelief">Emergency Relief</option>
+                            <option value="emergencyrelief">Emergency Relief</option>
                             <option value="technology">Technology</option>
-                            <option value="grants">Grants</option>
-                            <option value="loans">Loans</option>
+                            <option value="grant">Grants</option>
+                            <option value="loan">Loans</option>
                         </DropDownSelect>
                     </DropDown>
                     <DropDown>
@@ -165,9 +165,39 @@ export default class Home extends React.Component {
         )
     };
 
+    clean = string => {
+        debugger
+        return string.toLowerCase().replace('-','').replace(' ','')
+    };
+
+    getReliefTypes = page => {
+        return page.fields.relief_type.map(t => this.clean(t.type))
+    };
+
+    getOrgType = page => {
+        return this.clean(page.fields.organization_type || "")
+    };
+
+    getLocation = page => {
+        return this.clean(page.fields.location || "")
+    };
+
+    match(array, searchTerm){
+        if (searchTerm === "" || searchTerm === null || searchTerm === undefined)
+            return true;
+        else
+            return array.includes(searchTerm);
+    }
+
     searchResults = () => {
-        const pageData = this.state.cms.data || []
-        const cards = pageData.map(page => (
+        const {typeOfRelief, typeOfOrganization, location} = this.state.form
+        const pageData = this.state.cms.data || [];
+        const filteredPageData = pageData.filter( page => {
+            return this.match(this.getReliefTypes(page),typeOfRelief) &&
+                this.match([this.getOrgType(page)], typeOfOrganization) &&
+                this.match([this.getLocation(page)], location)
+        });
+        const cards = filteredPageData.map(page => (
             <Link to={"/grants/"+page.slug}>
                 <Card>
                     <CardImage src={page.fields.hero_image}/>
