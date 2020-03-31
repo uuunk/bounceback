@@ -10847,6 +10847,11 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typeface-be-vietnam@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/typeface-be-vietnam/-/typeface-be-vietnam-1.1.3.tgz#c2c7fdec6e2ba6395246822f7f09320ffda16dd9"
+  integrity sha512-gN3wEs23MsstlM/WEo4eF9W/swnL/WW8ti1tRqaczOl9KfjnuMS/r3Rq3kss6GgArOmF8nN47V5cziDaeh15pA==
+
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/unicode-canonical-property-names-ecmascript/-/unicode-canonical-property-names-ecmascript-1.0.4.tgz#2619800c4c825800efdd8343af7dd9933cbe2818"

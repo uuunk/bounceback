@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a1461c60-e928-45aa-99e1-650b0f0cef4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Grant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Grant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <list id="71bbb8cc-3381-455b-a926-3ea72d76a5b1" name=".idea" comment=".idea">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +27,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="5" end1="6" start2="5" end2="13" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="22" end1="22" start2="29" end2="51" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="33" end1="34" start2="62" end2="63" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="47" end1="47" start2="76" end2="81" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="80" end1="80" start2="114" end2="115" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="84" end1="85" start2="119" end2="120" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="114" end1="115" start2="149" end2="164" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="121" end1="121" start2="170" end2="172" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="125" end1="126" start2="176" end2="179" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="132" end1="133" start2="185" end2="186" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="135" end1="136" start2="188" end2="189" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="156" end1="156" start2="209" end2="213" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="160" end1="161" start2="217" end2="218" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="163" end1="164" start2="220" end2="225" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="168" end1="169" start2="229" end2="230" changelist="71bbb8cc-3381-455b-a926-3ea72d76a5b1" />
+        <range start1="171" end1="172" start2="232" end2="233" changelist="71bbb8cc-3381-455b-a926-3ea72d76a5b1" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectId" id="1ZiqYMM8BpfQJ1JtKDPmPLJdCfB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -31,7 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -44,6 +73,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -78,11 +112,12 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a1461c60-e928-45aa-99e1-650b0f0cef4b" name="Default Changelist" comment="" />
+      <changelist id="71bbb8cc-3381-455b-a926-3ea72d76a5b1" name=".idea" comment="" />
       <created>1585332309180</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585332309180</updated>
-      <workItem from="1585332312230" duration="45574000" />
+      <workItem from="1585332312230" duration="49085000" />
     </task>
     <task id="LOCAL-00001" summary="setup and rough sketch of home page">
       <created>1585408985463</created>
@@ -112,28 +147,46 @@
       <option name="project" value="LOCAL" />
       <updated>1585619780008</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add details page links">
+      <created>1585663654379</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585663654379</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add footer, tweak navbar">
+      <created>1585664811714</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585664811714</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="setup and rough sketch of home page" />
     <MESSAGE value="pile of changes" />
     <MESSAGE value="add react router link for static site gen" />
     <MESSAGE value="update details page w/ real data" />
-    <option name="LAST_COMMIT_MESSAGE" value="update details page w/ real data" />
+    <MESSAGE value="add details page links" />
+    <MESSAGE value="add footer, tweak navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="add footer, tweak navbar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585338855957">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585338855957" />
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1585619779882">
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1585664811604">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585619779882" />
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585664811604" />
     <state x="756" y="460" key="Github.ShareDialog" timestamp="1585589676334">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -154,14 +207,22 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="875" height="197" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1585587403227" />
+    <state x="695" y="278" key="RollbackChangesDialog" timestamp="1585663717821">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="695" y="278" key="RollbackChangesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1585663717821" />
     <state x="397" y="199" key="SettingsEditor" timestamp="1585334214442">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1585334214442" />
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1585619783617">
+    <state x="711" y="448" key="VCS.ChangelistChooser" timestamp="1585664778241">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585619783617" />
+    <state x="711" y="448" key="VCS.ChangelistChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585664778241" />
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1585668805578">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585668805578" />
     <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585595602625">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

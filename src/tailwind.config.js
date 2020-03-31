@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   theme: {
     screens: {
@@ -7,23 +9,13 @@ module.exports = {
       xl: '1280px',
     },
     fontFamily: {
-      display: ['Gilroy', 'sans-serif'],
-      body: ['Graphik', 'sans-serif'],
+      body: ['"Be Vietnam"', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif']
     },
     borderWidth: {
       default: '1px',
       '0': '0',
       '2': '2px',
       '4': '4px',
-    },
-    borderRadius: {
-      none: '0',
-      sm: '0.125rem',
-      default: '0.25rem',
-      md: '0.375rem',
-      lg: '0.5rem',
-      xl: `2rem`,
-      full: '9999px',
     },
     container: {
       center: true,
@@ -35,9 +27,12 @@ module.exports = {
       spacing: {
         '96': '24rem',
         '128': '32rem',
+      },
+      borderRadius: {
+        xl: '2rem',
       }
     }
   },
   variants: {},
   plugins: [],
-}
+};
