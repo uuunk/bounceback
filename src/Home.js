@@ -10,22 +10,22 @@ import styled, {css} from "styled-components";
 
 const Container = tw.div``;
 
-const TitleSection = tw.div`mx-40 my-32 flex mb-4 items-end`;
+const TitleSection = tw.div`mx-40 my-32 flex mb-10 items-end`;
 const Section = tw.div`w-1/2`;
-const Sub = tw.span`text-gray-700`;
-const Title = tw.div`text-5xl font-bold text-white`;
-const Description = tw.div`text-white mb-3`;
+const Sub = tw.span`text-gray-300 tracking-wider font-extrabold`;
+const Title = tw.div`text-5xl font-bold text-white mt-2`;
+const Description = tw.div`text-white mb-3 mx-12`;
 
-const DisplayContainer = tw.div`mx-40 my-5`;
+const DisplayContainer = tw.div`mx-40 mt-5 mb-20`;
 const Display = tw.form`bg-white rounded-xl p-12 shadow`;
-const DisplayTitle = tw.div`text-xl font-bold mb-1`;
-const DisplayTitleSub = tw.div`text-gray-700`;
+const DisplayTitle = tw.div`text-3xl font-bold mb-1`;
+const DisplayTitleSub = tw.div`text-gray-500`;
 const DisplayRow = tw.div`grid grid-cols-3 mt-12 mb-6 -mx-3`;
 
 const DropDown = tw.div`px-3 mb-6 md:mb-0`;
 const DropDownLabel = tw.label`block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2`;
 const RawDDSelect = tw.select`block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 
-        h-12 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500`
+        h-12 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-gray-500`
 const DropDownSelect = styled(RawDDSelect)
     `&:after {
             font-family: FontAwesome;
@@ -36,7 +36,8 @@ const DropDownSelect = styled(RawDDSelect)
             right: 20px;
             pointer-events: none;
      }`;
-const Submit = tw.button`w-full bg-gray-200 border-transparent border-4 text-blue-500 hover:text-white hover:bg-blue-500 text-sm py-1 px-2 h-16 rounded shadow`;
+const Submit = tw.button`w-full bg-gray-200 border-transparent border-4 text-darkblue hover:text-white hover:bg-darkblue 
+        text-xs tracking-widest font-bold py-1 px-2 h-16 rounded-lg shadow`;
 
 const Card = tw.div`rounded-lg overflow-hidden shadow-lg mx-3 mb-6`;
 const CardImage = tw.img`w-full h-40 object-cover`;
@@ -159,7 +160,7 @@ export default class Home extends React.Component {
                         </DropDownSelect>
                     </DropDown>
                 </DisplayRow>
-                <Submit onClick={this.handleSubmit}>See What You're Eligible For</Submit>
+                <Submit onClick={this.handleSubmit}>SEE WHAT YOU'RE ELIGIBLE FOR</Submit>
             </React.Fragment>
         )
     };
