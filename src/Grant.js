@@ -3,10 +3,11 @@ import butter from './butter-client'
 import Nav from "./Nav";
 import tw from "twin.macro";
 import {Link} from "react-router-dom";
+import Footer from "./Footer";
 
 const PageContainer = tw.div`bg-gray-200 w-full h-full`
 const HeroImage = tw.div`bg-cover bg-center`;
-const DetailsContainer = tw.div`m-12 -mt-64`
+const DetailsContainer = tw.div`mx-12 -mt-64`
 const Details = tw.div` flex flex-col w-auto mx-12 bg-white rounded-xl p-12`
 const DetailsTitle = tw.div`text-5xl font-bold text-gray-900`
 const DetailsSub = tw.div`text-3xl text-gray-700 mb-1 -mt-2`
@@ -172,6 +173,7 @@ export default class Grant extends React.Component {
                             </Flex>
                         </DetailsContainer>
                     </PageContainer>
+                    <Footer background/>
                 </>
             )
         } else {

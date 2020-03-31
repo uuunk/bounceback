@@ -2,13 +2,13 @@ import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components/macro';
 
-const Nav = tw.nav`flex items-center justify-between p-1 h-20`;
+const Navbar = tw.nav`flex items-center justify-between p-1 h-20`;
 const Logo = styled.span(({invert})=> [
-    tw`font-bold text-xl tracking-tight mx-4`,
+    tw`font-bold text-xl tracking-tight mx-10`,
     invert ? tw`text-white` : tw`text-gray-900`
 ]);
 const Links = styled.div(({invert})=> [
-  tw`text-sm lg:flex-grow`,
+  tw`text-xs mr-10 lg:flex-grow`,
     invert ? tw`text-white` : tw`text-gray-900`
 ]);
 const Button = styled.button(({invert}) => [
@@ -19,12 +19,12 @@ const Button = styled.button(({invert}) => [
 const Link = tw.a`px-2`;
 
 
-export default class extends React.Component {
+export default class Nav extends React.Component {
 
     render() {
         const invert = this.props.invert || false;
         return (
-            <Nav>
+            <Navbar>
                 <div>
                     <Logo invert={invert}>The Bounce Back</Logo>
                 </div>
@@ -37,7 +37,7 @@ export default class extends React.Component {
                         <Link>CONTACT US</Link>
                     </Links>
                 </div>
-            </Nav>
+            </Navbar>
         )
     }
 }

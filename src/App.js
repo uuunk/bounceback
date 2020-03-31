@@ -5,7 +5,7 @@ import Nav from "./Nav";
 
 function App() {
     return (
-        <div className="App">
+        <div className="background-gradient">
             <Nav/>
             <Home/>
         </div>

@@ -5,6 +5,7 @@ import tw from "twin.macro";
 import Nav from "./Nav";
 import './Home.scss';
 import { Link } from 'react-router-dom';
+import Footer from "./Footer";
 
 const Container = tw.div``;
 
@@ -131,7 +132,7 @@ export default class Home extends React.Component {
         };
 
         return (
-            <div className="App">
+            <div className="background-gradient">
                 <Nav invert={true}/>
                 <Container className="container mx-auto">
                     <TitleSection>
@@ -152,6 +153,7 @@ export default class Home extends React.Component {
                         </Display>
                     </DisplayContainer>
                 </Container>
+                <Footer/>
             </div>
         )
     }
