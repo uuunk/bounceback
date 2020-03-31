@@ -6,6 +6,7 @@ import Nav from "./Nav";
 import './Home.scss';
 import { Link } from 'react-router-dom';
 import Footer from "./Footer";
+import styled, {css} from "styled-components";
 
 const Container = tw.div``;
 
@@ -23,8 +24,18 @@ const DisplayRow = tw.div`grid grid-cols-3 mt-12 mb-6 -mx-3`;
 
 const DropDown = tw.div`px-3 mb-6 md:mb-0`;
 const DropDownLabel = tw.label`block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2`;
-const DropDownSelect = tw.select`block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 
-                            px-4 pr-8 h-12 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500`;
+const RawDDSelect = tw.select`block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 
+        h-12 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500`
+const DropDownSelect = styled(RawDDSelect)
+    `&:after {
+            font-family: FontAwesome;
+            content: '\\f107';
+            font-size: 28px;
+            position: absolute;
+            top: 12px;
+            right: 20px;
+            pointer-events: none;
+     }`;
 const Submit = tw.button`w-full bg-gray-200 border-transparent border-4 text-blue-500 hover:text-white hover:bg-blue-500 text-sm py-1 px-2 h-16 rounded shadow`;
 
 const Card = tw.div`rounded-lg overflow-hidden shadow-lg mx-3 mb-6`;
