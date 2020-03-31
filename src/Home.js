@@ -1,12 +1,11 @@
 import React from 'react';
 import butter from './butter-client';
-import {Helmet} from 'react-helmet'
 import tw from "twin.macro";
 import Nav from "./Nav";
 import './Home.scss';
 import { Link } from 'react-router-dom';
 import Footer from "./Footer";
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 import qs from "query-string";
 
 const Container = tw.div``;
@@ -47,7 +46,7 @@ const CardTitle = tw.div`font-bold text-xl mb-2`;
 const CardTitleSub = tw.div``;
 
 const setQueryString = qsValue => {
-    const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?" + qsValue;
+    const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + qsValue;
     window.history.pushState({ path: newurl }, "", newurl);
 };
 
@@ -66,17 +65,22 @@ export default class Home extends React.Component {
     }
 
     async componentDidMount() {
-        const {match} = this.props;
         const resp = await butter.page.list('relief');
         this.setState({cms: resp.data,
-                            form: qs.parse(this.props.location.search)})
+            form: qs.parse(this.props.location.search)
+        })
+        window.onpopstate = this.onBackButtonEvent.bind(this);
+    }
+
+    onBackButtonEvent(event) {
+        event.preventDefault();
+        this.setState( {showResults: false});
     }
 
     handleSubmit(event) {
         event.preventDefault();
-        const query = qs.stringify(this.state.form);
+        const query = "?" + qs.stringify(this.state.form);
         setQueryString(query);
-        debugger
         this.setState( {showResults: true})
     }
 
