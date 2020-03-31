@@ -7,6 +7,7 @@ import './Home.scss';
 import { Link } from 'react-router-dom';
 import Footer from "./Footer";
 import styled, {css} from "styled-components";
+import qs from "query-string";
 
 const Container = tw.div``;
 
@@ -45,6 +46,11 @@ const CardText = tw.div`px-6 py-4`;
 const CardTitle = tw.div`font-bold text-xl mb-2`;
 const CardTitleSub = tw.div``;
 
+const setQueryString = qsValue => {
+    const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?" + qsValue;
+    window.history.pushState({ path: newurl }, "", newurl);
+};
+
 export default class Home extends React.Component {
 
     constructor() {
@@ -62,11 +68,15 @@ export default class Home extends React.Component {
     async componentDidMount() {
         const {match} = this.props;
         const resp = await butter.page.list('relief');
-        this.setState({cms: resp.data})
+        this.setState({cms: resp.data,
+                            form: qs.parse(this.props.location.search)})
     }
 
     handleSubmit(event) {
         event.preventDefault();
+        const query = qs.stringify(this.state.form);
+        setQueryString(query);
+        debugger
         this.setState( {showResults: true})
     }
 
@@ -75,9 +85,12 @@ export default class Home extends React.Component {
         const value = target.value;
         const name = target.name;
 
-        this.setState({form:{
-            [name]: value
-        }});
+        this.setState( prevState => ({
+            form:{
+                ...prevState.form,
+                [name]: value
+            }
+        }));
     }
 
     searchForm = () => {
