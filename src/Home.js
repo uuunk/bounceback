@@ -115,8 +115,8 @@ export default class Home extends React.Component {
                         <DropDownLabel>Type Of Organization</DropDownLabel>
                         <DropDownSelect value={this.state.form.typeOfOrganization} name="typeOfOrganization" onChange={this.handleInputChange}>
                             <option value="" disabled selected>Select Company Type</option>
-                            <option value="forProfit">For Profit</option>
-                            <option value="nonProfit">Non-Profit</option>
+                            <option value="forprofit">For Profit</option>
+                            <option value="nonprofit">Non-Profit</option>
                         </DropDownSelect>
                     </DropDown>
                     <DropDown>
@@ -183,16 +183,15 @@ export default class Home extends React.Component {
     };
 
     clean = string => {
-        debugger
-        return string.toLowerCase().replace('-','').replace(' ','')
+        return string.replace('-','').replace(' ','')
     };
 
     getReliefTypes = page => {
-        return page.fields.relief_type.map(t => this.clean(t.type))
+        return page.fields.relief_type.map(t => this.clean(t.type).toLowerCase())
     };
 
     getOrgType = page => {
-        return this.clean(page.fields.organization_type || "")
+        return this.clean(page.fields.organization_type || "").toLowerCase()
     };
 
     getLocation = page => {

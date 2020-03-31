@@ -26,18 +26,16 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
-        <range start1="5" end1="6" start2="5" end2="5" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="7" end1="8" start2="6" end2="6" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="30" end1="40" start2="28" end2="40" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="111" end1="112" start2="111" end2="112" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="190" end1="191" start2="190" end2="198" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="210" end1="211" start2="217" end2="219" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="217" end1="218" start2="225" end2="226" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="220" end1="221" start2="228" end2="229" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="253" end1="254" start2="261" end2="262" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="256" end1="257" start2="264" end2="265" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="261" end1="262" start2="269" end2="270" changelist="71bbb8cc-3381-455b-a926-3ea72d76a5b1" />
-        <range start1="264" end1="265" start2="272" end2="273" changelist="71bbb8cc-3381-455b-a926-3ea72d76a5b1" />
+        <range start1="29" end1="40" start2="29" end2="39" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="111" end1="112" start2="110" end2="111" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="197" end1="198" start2="196" end2="204" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="218" end1="219" start2="224" end2="226" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="225" end1="226" start2="232" end2="233" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="228" end1="229" start2="235" end2="236" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="261" end1="262" start2="268" end2="269" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="264" end1="265" start2="271" end2="272" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="269" end1="270" start2="276" end2="277" changelist="71bbb8cc-3381-455b-a926-3ea72d76a5b1" />
+        <range start1="272" end1="273" start2="279" end2="280" changelist="71bbb8cc-3381-455b-a926-3ea72d76a5b1" />
       </ranges>
     </file>
   </component>
@@ -109,7 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585332309180</updated>
-      <workItem from="1585332312230" duration="56979000" />
+      <workItem from="1585332312230" duration="57492000" />
     </task>
     <task id="LOCAL-00001" summary="setup and rough sketch of home page">
       <created>1585408985463</created>
@@ -195,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585677940965</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="handle browser back button">
+      <created>1585680977100</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1585680977100</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,17 +221,18 @@
     <MESSAGE value="homepage style cleanup" />
     <MESSAGE value="add results filtering" />
     <MESSAGE value="add filter results to querystring, parse from query string" />
-    <option name="LAST_COMMIT_MESSAGE" value="add filter results to querystring, parse from query string" />
+    <MESSAGE value="handle browser back button" />
+    <option name="LAST_COMMIT_MESSAGE" value="handle browser back button" />
   </component>
   <component name="WindowStateProjectService">
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585338855957">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585338855957" />
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1585677940238">
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1585680976912">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585677940238" />
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585680976912" />
     <state x="756" y="460" key="Github.ShareDialog" timestamp="1585589676334">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -259,10 +265,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="711" y="448" key="VCS.ChangelistChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585664778241" />
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1585677944934">
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1585680979145">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585677944934" />
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585680979145" />
     <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585595602625">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
