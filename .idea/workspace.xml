@@ -82,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585332309180</updated>
-      <workItem from="1585332312230" duration="44794000" />
+      <workItem from="1585332312230" duration="45574000" />
     </task>
     <task id="LOCAL-00001" summary="setup and rough sketch of home page">
       <created>1585408985463</created>
@@ -105,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585595635296</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update details page w/ real data">
+      <created>1585619780008</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585619780008</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,17 +122,18 @@
     <MESSAGE value="setup and rough sketch of home page" />
     <MESSAGE value="pile of changes" />
     <MESSAGE value="add react router link for static site gen" />
-    <option name="LAST_COMMIT_MESSAGE" value="add react router link for static site gen" />
+    <MESSAGE value="update details page w/ real data" />
+    <option name="LAST_COMMIT_MESSAGE" value="update details page w/ real data" />
   </component>
   <component name="WindowStateProjectService">
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585338855957">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585338855957" />
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1585595635181">
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1585619779882">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585595635181" />
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585619779882" />
     <state x="756" y="460" key="Github.ShareDialog" timestamp="1585589676334">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -150,10 +158,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1585334214442" />
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1585595637465">
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1585619783617">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585595637465" />
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585619783617" />
     <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585595602625">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

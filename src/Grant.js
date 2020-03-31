@@ -35,7 +35,7 @@ const TwoThird = tw.div`w-2/3 mr-4`
 const Half = tw.div`w-1/2`
 
 const CTACard = tw.div`w-1/2 m-12 p-12 rounded-xl bg-white`
-const CTAButton = tw.button`bg-blue-500 text-white text-sm p-4 rounded mt-10 w-1/2 shadow-xl`
+const CTAButton = tw.a`cursor-pointer text-center inline-block bg-blue-500 text-white text-sm p-4 rounded mt-10 w-1/2 shadow-xl`
 
 
 export default class Grant extends React.Component {
@@ -161,13 +161,13 @@ export default class Grant extends React.Component {
                                     <DetailsSectionTitle>Apply For Grant</DetailsSectionTitle>
                                     <DetailsSectionDescription>Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit.</DetailsSectionDescription>
-                                    <CTAButton>APPLY NOW</CTAButton>
+                                    <CTAButton href={relief.fields.application_link}>APPLY NOW</CTAButton>
                                 </CTACard>
                                 <CTACard>
                                     <DetailsSectionTitle>Need Help?</DetailsSectionTitle>
                                     <DetailsSectionDescription>Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit.</DetailsSectionDescription>
-                                    <CTAButton>HELP ME APPLY</CTAButton>
+                                   <CTAButton href="https://go.oncehub.com/Angelos">HELP ME APPLY</CTAButton>
                                 </CTACard>
                             </Flex>
                         </DetailsContainer>
