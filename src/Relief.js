@@ -72,7 +72,7 @@ export default class Relief extends React.Component {
             && pageData.fields
             && pageData.fields.data_needed
             && pageData.fields.data_needed.map(data => (
-            <li>{data.name}</li>
+            <li key={data.name}>{data.name}</li>
         ));
 
         const relief = this.state.data;

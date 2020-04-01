@@ -112,7 +112,7 @@ export default class Home extends React.Component {
                         <DropDownLabel>Type Of Relief</DropDownLabel>
                         <DropDownSelect value={this.state.form.typeOfRelief} name="typeOfRelief"
                                         onChange={this.handleInputChange}>
-                            <option value="" disabled selected>Select Resource</option>
+                            <option value="" disabled defaultValue>Select Resource</option>
                             <option value="emergencyrelief">Emergency Relief</option>
                             <option value="technology">Technology</option>
                             <option value="grant">Grants</option>
@@ -123,7 +123,7 @@ export default class Home extends React.Component {
                         <DropDownLabel>Type Of Organization</DropDownLabel>
                         <DropDownSelect value={this.state.form.typeOfOrganization} name="typeOfOrganization"
                                         onChange={this.handleInputChange}>
-                            <option value="" disabled selected>Select Company Type</option>
+                            <option value="" disabled defaultValue>Select Company Type</option>
                             <option value="forprofit">For Profit</option>
                             <option value="nonprofit">Non-Profit</option>
                         </DropDownSelect>
@@ -132,7 +132,7 @@ export default class Home extends React.Component {
                         <DropDownLabel>Location</DropDownLabel>
                         <DropDownSelect value={this.state.form.location} name="location"
                                         onChange={this.handleInputChange}>
-                            <option value="" disabled selected>Select Location</option>
+                            <option value="" disabled defaultValue>Select Location</option>
                             <option value="alabama">Alabama</option>
                             <option value="alaska">Alaska</option>
                             <option value="arizona">Arizona</option>
@@ -226,7 +226,7 @@ export default class Home extends React.Component {
                 (this.match([this.getLocation(page)], location) || this.getLocation(page) === "unitedstates")
         });
         const cards = filteredPageData.map(page => (
-            <Link to={"/relief/" + page.slug}>
+            <Link to={"/relief/" + page.slug} key={page.slug}>
                 <Card>
                     <CardImage src={page.fields.hero_image}/>
                     <CardText>
