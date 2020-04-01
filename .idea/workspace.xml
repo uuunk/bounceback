@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a1461c60-e928-45aa-99e1-650b0f0cef4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Relief.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Relief.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nav.js" afterDir="false" />
     </list>
     <list id="71bbb8cc-3381-455b-a926-3ea72d76a5b1" name=".idea" comment=".idea">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -26,17 +27,15 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
-        <range start1="5" end1="7" start2="5" end2="6" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="29" end1="38" start2="28" end2="39" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="109" end1="110" start2="110" end2="111" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="237" end1="238" start2="238" end2="246" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="264" end1="265" start2="272" end2="274" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="271" end1="272" start2="280" end2="281" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="274" end1="275" start2="283" end2="284" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="307" end1="308" start2="316" end2="317" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="310" end1="311" start2="319" end2="320" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="315" end1="316" start2="324" end2="325" changelist="71bbb8cc-3381-455b-a926-3ea72d76a5b1" />
-        <range start1="318" end1="319" start2="327" end2="328" changelist="71bbb8cc-3381-455b-a926-3ea72d76a5b1" />
+        <range start1="5" end1="6" start2="5" end2="7" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="28" end1="39" start2="29" end2="38" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="110" end1="111" start2="109" end2="110" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="245" end1="246" start2="244" end2="252" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="273" end1="274" start2="279" end2="281" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="280" end1="281" start2="287" end2="288" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="283" end1="284" start2="290" end2="291" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="324" end1="325" start2="331" end2="332" changelist="71bbb8cc-3381-455b-a926-3ea72d76a5b1" />
+        <range start1="327" end1="328" start2="334" end2="335" changelist="71bbb8cc-3381-455b-a926-3ea72d76a5b1" />
       </ranges>
     </file>
   </component>
@@ -108,7 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585332309180</updated>
-      <workItem from="1585332312230" duration="63406000" />
+      <workItem from="1585332312230" duration="63996000" />
     </task>
     <task id="LOCAL-00001" summary="setup and rough sketch of home page">
       <created>1585408985463</created>
@@ -243,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585708776795</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="related links positioning">
+      <created>1585709194096</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1585709194096</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,17 +277,18 @@
     <MESSAGE value="fix back button" />
     <MESSAGE value="rename grant to relief, add money formatting" />
     <MESSAGE value="fix nav button, update card link" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix nav button, update card link" />
+    <MESSAGE value="related links positioning" />
+    <option name="LAST_COMMIT_MESSAGE" value="related links positioning" />
   </component>
   <component name="WindowStateProjectService">
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585338855957">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585338855957" />
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1585708776647">
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1585709193925">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585708776647" />
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585709193925" />
     <state x="756" y="460" key="Github.ShareDialog" timestamp="1585589676334">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -314,10 +321,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="711" y="448" key="VCS.ChangelistChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585664778241" />
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1585708781609">
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1585709843235">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585708781609" />
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585709843235" />
     <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585595602625">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

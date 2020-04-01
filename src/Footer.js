@@ -24,7 +24,7 @@ export default class Footer extends React.Component {
             <Nav className={background ? "background-gradient":""}>
                 <div>
                     <Text>© The Bounce Back 2020</Text>
-                    <Text>Terms & Privacy</Text>
+                    <Text as="a" href="https://docs.google.com/document/d/e/2PACX-1vQZoukZxPxam7kQK7DsFWXwzGljq9n2ACVjXiirHIcVC5vcOUK8Yt51dviAhHG8RZXP6hsAzGF8n4gK/pub">Terms & Privacy</Text>
                 </div>
                 <div>
                 </div>
