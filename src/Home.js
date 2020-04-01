@@ -3,10 +3,11 @@ import butter from './butter-client';
 import tw from "twin.macro";
 import Nav from "./Nav";
 import './Home.scss';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import Footer from "./Footer";
 import styled from "styled-components";
 import qs from "query-string";
+import {Button} from "./styles";
 
 const Container = tw.div``;
 
@@ -36,8 +37,9 @@ const DropDownSelect = styled(RawDDSelect)
             right: 20px;
             pointer-events: none;
      }`;
-const Submit = tw.button`w-full bg-gray-200 border-transparent border-4 text-darkblue hover:text-white hover:bg-darkblue 
-        text-xs tracking-widest font-bold py-1 px-2 h-16 rounded-lg shadow`;
+
+const DefaultButton = tw.button`bg-gray-200 border-transparent border-4 text-darkblue text-xs tracking-widest font-bold py-1 px-2 h-16 rounded-lg`
+const Submit = tw.button`w-full hover:text-white hover:bg-darkblue shadow`;
 
 const Card = tw.div`rounded-lg overflow-hidden shadow-lg mx-3 mb-6`;
 const CardImage = tw.img`w-full h-40 object-cover`;
@@ -45,28 +47,33 @@ const CardText = tw.div`px-6 py-4`;
 const CardTitle = tw.div`font-bold text-xl mb-2`;
 const CardTitleSub = tw.div``;
 
+const Flex = tw.div`flex`;
+
 const setQueryString = qsValue => {
     const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + qsValue;
-    window.history.pushState({ path: newurl }, "", newurl);
+    window.history.pushState({path: newurl}, "", newurl);
 };
 
 export default class Home extends React.Component {
 
     constructor() {
         super();
-        this.state = {showResults: false,
-                        form: {
-                            // typeOfRelief: "",
-                            // typeOfOrganization: "",
-                            // location: ""
-                        }};
+        this.state = {
+            showResults: false,
+            form: {
+                // typeOfRelief: "",
+                // typeOfOrganization: "",
+                // location: ""
+            }
+        };
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     async componentDidMount() {
         const resp = await butter.page.list('relief');
-        this.setState({cms: resp.data,
+        this.setState({
+            cms: resp.data,
             form: qs.parse(this.props.location.search)
         })
         window.onpopstate = this.onBackButtonEvent.bind(this);
@@ -74,14 +81,14 @@ export default class Home extends React.Component {
 
     onBackButtonEvent(event) {
         event.preventDefault();
-        this.setState( {showResults: false});
+        this.setState({showResults: false});
     }
 
     handleSubmit(event) {
         event.preventDefault();
         const query = "?" + qs.stringify(this.state.form);
         setQueryString(query);
-        this.setState( {showResults: true})
+        this.setState({showResults: true})
     }
 
     handleInputChange(event) {
@@ -103,7 +110,8 @@ export default class Home extends React.Component {
                 <DisplayRow>
                     <DropDown>
                         <DropDownLabel>Type Of Relief</DropDownLabel>
-                        <DropDownSelect value={this.state.form.typeOfRelief} name="typeOfRelief" onChange={this.handleInputChange}>
+                        <DropDownSelect value={this.state.form.typeOfRelief} name="typeOfRelief"
+                                        onChange={this.handleInputChange}>
                             <option value="" disabled selected>Select Resource</option>
                             <option value="emergencyrelief">Emergency Relief</option>
                             <option value="technology">Technology</option>
@@ -183,7 +191,7 @@ export default class Home extends React.Component {
     };
 
     clean = string => {
-        return string.replace('-','').replace(' ','')
+        return string.replace('-', '').replace(' ', '')
     };
 
     getReliefTypes = page => {
@@ -191,14 +199,14 @@ export default class Home extends React.Component {
     };
 
     getOrgType = page => {
-        return this.clean(page.fields.organization_type || "").toLowerCase()
+        return page.fields.organization_type.map(t => this.clean(t.organization_type).toLowerCase())
     };
 
     getLocation = page => {
         return this.clean(page.fields.location || "")
     };
 
-    match(array, searchTerm){
+    match(array, searchTerm) {
         if (searchTerm === "" || searchTerm === null || searchTerm === undefined)
             return true;
         else
@@ -208,13 +216,13 @@ export default class Home extends React.Component {
     searchResults = () => {
         const {typeOfRelief, typeOfOrganization, location} = this.state.form
         const pageData = this.state.cms.data || [];
-        const filteredPageData = pageData.filter( page => {
-            return this.match(this.getReliefTypes(page),typeOfRelief) &&
-                this.match([this.getOrgType(page)], typeOfOrganization) &&
+        const filteredPageData = pageData.filter(page => {
+            return this.match(this.getReliefTypes(page), typeOfRelief) &&
+                this.match(this.getOrgType(page), typeOfOrganization) &&
                 this.match([this.getLocation(page)], location)
         });
         const cards = filteredPageData.map(page => (
-            <Link to={"/grants/"+page.slug}>
+            <Link to={"/grants/" + page.slug}>
                 <Card>
                     <CardImage src={page.fields.hero_image}/>
                     <CardText>

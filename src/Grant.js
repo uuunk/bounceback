@@ -97,14 +97,14 @@ export default class Grant extends React.Component {
                                             <InfoSetTitle>Completion Time</InfoSetTitle>
                                             <InfoSetText>{relief.fields.completion_time}</InfoSetText>
                                         </InfoSet>
-                                        <InfoSet>
+                                        {relief.fields.customer_service_phone && (<InfoSet>
                                             <InfoSetTitle>Customer Service Phone</InfoSetTitle>
                                             <InfoSetText>{relief.fields.customer_service_phone}</InfoSetText>
-                                        </InfoSet>
-                                        <InfoSet>
+                                        </InfoSet>)}
+                                        {relief.fields.customer_service_email && (<InfoSet>
                                             <InfoSetTitle>Customer Service Email</InfoSetTitle>
-                                            <InfoSetText>{relief.fields.customer_service_phone}</InfoSetText>
-                                        </InfoSet>
+                                            <InfoSetText>{relief.fields.customer_service_email}</InfoSetText>
+                                        </InfoSet>)}
                                     </DisplayRow>
                                 </DetailsSection>
                                 <Divider/>
@@ -125,14 +125,15 @@ export default class Grant extends React.Component {
                                             <InfoSetTitle>Location</InfoSetTitle>
                                             <InfoSetText>{relief.fields.location}</InfoSetText>
                                         </InfoSet>
+                                        {relief.fields.organization_type && (
                                         <InfoSet>
                                             <InfoSetTitle>Organization Type</InfoSetTitle>
-                                            <InfoSetText>{relief.fields.organization_type}</InfoSetText>
-                                        </InfoSet>
-                                        <InfoSet>
+                                            <InfoSetText>{relief.fields.organization_type[0].organization_type}</InfoSetText>
+                                        </InfoSet>)}
+                                        {relief.fields.availability && (<InfoSet>
                                             <InfoSetTitle>Availability</InfoSetTitle>
-                                            <InfoSetText>{relief.fields.availability}</InfoSetText>
-                                        </InfoSet>
+                                            <InfoSetText>{relief.fields.availability[0].availability}</InfoSetText>
+                                        </InfoSet>)}
                                         <InfoSet>
                                             <InfoSetTitle>End Date</InfoSetTitle>
                                             <InfoSetText>{relief.fields.end_date}</InfoSetText>
