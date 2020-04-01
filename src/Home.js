@@ -39,7 +39,7 @@ const DropDownSelect = styled(RawDDSelect)
      }`;
 
 const DefaultButton = tw.button`bg-gray-200 border-transparent border-4 text-darkblue text-xs tracking-widest font-bold py-1 px-2 h-16 rounded-lg`
-const Submit = tw.button`w-full hover:text-white hover:bg-darkblue shadow`;
+const Submit = styled(DefaultButton)`${tw`w-full hover:text-white hover:bg-darkblue shadow`}`;
 
 const Card = tw.div`rounded-lg overflow-hidden shadow-lg mx-3 mb-6`;
 const CardImage = tw.img`w-full h-40 object-cover`;
@@ -47,7 +47,7 @@ const CardText = tw.div`px-6 py-4`;
 const CardTitle = tw.div`font-bold text-xl mb-2`;
 const CardTitleSub = tw.div``;
 
-const Flex = tw.div`flex`;
+const Flex = tw.div`flex justify-between`;
 
 const setQueryString = qsValue => {
     const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + qsValue;
@@ -209,10 +209,12 @@ export default class Home extends React.Component {
     };
 
     match(array, searchTerm) {
-        if (searchTerm === "" || searchTerm === null || searchTerm === undefined)
+        if (searchTerm === "" || searchTerm === null || searchTerm === undefined || array.length===0
+            || (array.length===1 && array[0] === "")) {
             return true;
-        else
+        } else {
             return array.includes(searchTerm);
+        }
     }
 
     searchResults = () => {
@@ -272,7 +274,7 @@ export default class Home extends React.Component {
                                     <DisplayTitleSub>Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit.</DisplayTitleSub>
                                 </div>
-                                <div>{this.state.showResults && <Button>BACK TO SEARCH</Button>}</div>
+                                <div>{this.state.showResults && <DefaultButton>BACK TO SEARCH</DefaultButton>}</div>
                             </Flex>
                             {searchDisplay()}
                         </Display>
