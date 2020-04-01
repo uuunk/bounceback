@@ -16,7 +16,7 @@ const TitleSection = tw.div`mx-40 my-32 flex mb-10 items-end`;
 const Section = tw.div`w-1/2`;
 const Sub = tw.span`text-gray-300 tracking-wider font-extrabold`;
 const Title = tw.div`text-5xl font-bold text-white mt-2`;
-const Description = tw.div`text-white mb-3 mx-12`;
+const Description = tw.div`text-gray-300 mb-3 mx-12`;
 
 const DisplayContainer = tw.div`mx-40 mt-5 mb-20`;
 const Display = tw.form`bg-white rounded-xl p-12 shadow`;
@@ -210,8 +210,8 @@ export default class Home extends React.Component {
     };
 
     match(array, searchTerm) {
-        if (searchTerm === "" || searchTerm === null || searchTerm === undefined || array.length===0
-            || (array.length===1 && array[0] === "")) {
+        if (searchTerm === "" || searchTerm === null || searchTerm === undefined || array.length === 0
+            || (array.length === 1 && array[0] === "")) {
             return true;
         } else {
             return array.includes(searchTerm);
@@ -231,7 +231,8 @@ export default class Home extends React.Component {
                 <Card>
                     <CardImage src={page.fields.hero_image}/>
                     <CardText>
-                        {page.fields.optional_subhead && <CardTitleSub>{page.fields.optional_subhead.toUpperCase()}</CardTitleSub>}
+                        {page.fields.optional_subhead &&
+                        <CardTitleSub>{page.fields.optional_subhead.toUpperCase()}</CardTitleSub>}
                         <CardTitle>{page.fields.seo_title}</CardTitle>
                     </CardText>
                 </Card>
@@ -254,26 +255,27 @@ export default class Home extends React.Component {
         };
 
         return (
-            <BodyContainer className="background-gradient">
+            <PageContainer className="background-gradient">
                 <Nav invert={true}/>
                 <BodyContainer className="container mx-auto">
                     <TitleSection>
                         <Section>
-                            <Sub>THESE ARE HARD TIMES</Sub>
+                            <Sub>DON'T BE DISCOURAGED IN CRISIS</Sub>
                             <Title>Let's Bounce Back</Title>
                         </Section>
                         <Section>
-                            <Description>In hac habitasse platea dictumst vivamus
-                                fermentum quam volutpat aliquam integer et.</Description>
+                            <Description>Find the latest relief available to your organization during the COVID-19
+                                crisis. Access the grants, loans, and services to help you bounce back
+                                stronger.</Description>
                         </Section>
                     </TitleSection>
                     <DisplayContainer>
                         <Display>
                             <Flex>
                                 <div>
-                                    <DisplayTitle>Find The Right Grant</DisplayTitle>
-                                    <DisplayTitleSub>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit.</DisplayTitleSub>
+                                    <DisplayTitle>Find The Right Relief</DisplayTitle>
+                                    <DisplayTitleSub>See what types of relief are available to your organization
+                                        today.</DisplayTitleSub>
                                 </div>
                                 <div>{this.state.showResults && <DefaultButton>BACK TO SEARCH</DefaultButton>}</div>
                             </Flex>
@@ -282,7 +284,7 @@ export default class Home extends React.Component {
                     </DisplayContainer>
                 </BodyContainer>
                 <Footer/>
-            </BodyContainer>
+            </PageContainer>
         )
     }
 }
