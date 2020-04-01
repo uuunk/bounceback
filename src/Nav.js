@@ -35,7 +35,7 @@ export default class Nav extends React.Component {
                 <div>
                     <Links invert={invert}>
                         <Link href="https://docs.google.com/document/d/e/2PACX-1vTWwAqLXiOnnAJmmNb63LZk3RkhKm1jLtON7DgE4GysWmTyHrcQDrKxxyJLXKXbxM6dC-CGVfJrstQv/pub">FAQS</Link>
-                        <Link href="https://www.cognitoforms.com/TheBounceBack1/HelpUsBounceBackStronger">CONTACT US</Link>
+                        <Link href="https://www.cognitoforms.com/TheBounceBack1/ContactTheBounceBack">CONTACT US</Link>
                     </Links>
                 </div>
             </Navbar>
