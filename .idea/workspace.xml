@@ -26,16 +26,16 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
-        <range start1="28" end1="38" start2="28" end2="38" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="109" end1="110" start2="109" end2="110" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="279" end1="280" start2="279" end2="287" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="311" end1="312" start2="318" end2="320" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="318" end1="319" start2="326" end2="327" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="321" end1="322" start2="329" end2="330" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="354" end1="355" start2="362" end2="363" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="357" end1="358" start2="365" end2="366" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="362" end1="363" start2="370" end2="371" changelist="71bbb8cc-3381-455b-a926-3ea72d76a5b1" />
-        <range start1="365" end1="366" start2="373" end2="374" changelist="71bbb8cc-3381-455b-a926-3ea72d76a5b1" />
+        <range start1="28" end1="38" start2="28" end2="34" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="109" end1="110" start2="105" end2="106" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="286" end1="287" start2="282" end2="290" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="319" end1="320" start2="322" end2="324" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="326" end1="327" start2="330" end2="331" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="329" end1="330" start2="333" end2="334" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="362" end1="363" start2="366" end2="367" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="365" end1="366" start2="369" end2="370" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="370" end1="371" start2="374" end2="375" changelist="71bbb8cc-3381-455b-a926-3ea72d76a5b1" />
+        <range start1="373" end1="374" start2="377" end2="378" changelist="71bbb8cc-3381-455b-a926-3ea72d76a5b1" />
       </ranges>
     </file>
   </component>
@@ -107,7 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585332309180</updated>
-      <workItem from="1585332312230" duration="65886000" />
+      <workItem from="1585332312230" duration="66074000" />
     </task>
     <task id="LOCAL-00001" summary="setup and rough sketch of home page">
       <created>1585408985463</created>
@@ -284,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585711812240</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="update details title spacing">
+      <created>1585712125770</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1585712125770</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,17 +324,18 @@
     <MESSAGE value="update card subhead" />
     <MESSAGE value="update details page lorem" />
     <MESSAGE value="turn needed into grid w/ number list" />
-    <option name="LAST_COMMIT_MESSAGE" value="turn needed into grid w/ number list" />
+    <MESSAGE value="update details title spacing" />
+    <option name="LAST_COMMIT_MESSAGE" value="update details title spacing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585338855957">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585338855957" />
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1585711812044">
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1585712125604">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585711812044" />
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585712125604" />
     <state x="756" y="460" key="Github.ShareDialog" timestamp="1585589676334">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -360,10 +368,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="711" y="448" key="VCS.ChangelistChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585664778241" />
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1585712117300">
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1585712128199">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585712117300" />
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585712128199" />
     <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585595602625">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

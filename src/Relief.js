@@ -22,7 +22,7 @@ const DetailsSection = tw.div``
 const DetailsSectionTitle = tw.div`text-3xl font-bold mb-1 text-gray-900`
 const DetailsSectionDescription = tw.div`text-gray-500`
 
-const DisplayRow = tw.div`flex flex-wrap mt-12 mb-6 -mx-3`;
+const DisplayRow = tw.div`flex flex-wrap mt-10 mb-6 -mx-3`;
 const InfoSet = tw.div`flex-1 px-3 mb-6 md:mb-0`;
 const InfoSetTitle = tw.div`block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2`;
 const InfoSetText = tw.div`block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 
