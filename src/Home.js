@@ -44,8 +44,8 @@ const Submit = styled(DefaultButton)`${tw`w-full hover:text-white hover:bg-darkb
 const Card = tw.div`rounded-lg overflow-hidden shadow-lg mx-3 mb-6`;
 const CardImage = tw.img`w-full h-40 object-cover`;
 const CardText = tw.div`px-6 py-4`;
-const CardTitle = tw.div`font-bold text-xl mb-2`;
-const CardTitleSub = tw.div``;
+const CardTitle = tw.div`tracking-tight font-semibold text-xl`;
+const CardTitleSub = tw.div`text-xs font-bold text-gray-600 tracking-widest mb-2`;
 
 const Flex = tw.div`flex justify-between`;
 
@@ -230,7 +230,7 @@ export default class Home extends React.Component {
                 <Card>
                     <CardImage src={page.fields.hero_image}/>
                     <CardText>
-                        <CardTitleSub>Optional Subhead</CardTitleSub>
+                        {page.fields.optional_subhead && <CardTitleSub>{page.fields.optional_subhead.toUpperCase()}</CardTitleSub>}
                         <CardTitle>{page.fields.seo_title}</CardTitle>
                     </CardText>
                 </Card>

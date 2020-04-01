@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a1461c60-e928-45aa-99e1-650b0f0cef4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home.js" afterDir="false" />
     </list>
     <list id="71bbb8cc-3381-455b-a926-3ea72d76a5b1" name=".idea" comment=".idea">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -27,15 +26,17 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
-        <range start1="5" end1="6" start2="5" end2="7" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="28" end1="39" start2="29" end2="38" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="110" end1="111" start2="109" end2="110" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="245" end1="246" start2="244" end2="252" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="273" end1="274" start2="279" end2="281" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="280" end1="281" start2="287" end2="288" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="283" end1="284" start2="290" end2="291" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
-        <range start1="324" end1="325" start2="331" end2="332" changelist="71bbb8cc-3381-455b-a926-3ea72d76a5b1" />
-        <range start1="327" end1="328" start2="334" end2="335" changelist="71bbb8cc-3381-455b-a926-3ea72d76a5b1" />
+        <range start1="5" end1="7" start2="5" end2="6" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="29" end1="38" start2="28" end2="39" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="109" end1="110" start2="110" end2="111" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="251" end1="252" start2="252" end2="267" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="280" end1="281" start2="295" end2="297" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="287" end1="288" start2="303" end2="304" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="290" end1="291" start2="306" end2="307" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="323" end1="324" start2="339" end2="340" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="326" end1="327" start2="342" end2="343" changelist="a1461c60-e928-45aa-99e1-650b0f0cef4b" />
+        <range start1="331" end1="332" start2="347" end2="348" changelist="71bbb8cc-3381-455b-a926-3ea72d76a5b1" />
+        <range start1="334" end1="335" start2="350" end2="351" changelist="71bbb8cc-3381-455b-a926-3ea72d76a5b1" />
       </ranges>
     </file>
   </component>
@@ -107,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585332309180</updated>
-      <workItem from="1585332312230" duration="63996000" />
+      <workItem from="1585332312230" duration="64620000" />
     </task>
     <task id="LOCAL-00001" summary="setup and rough sketch of home page">
       <created>1585408985463</created>
@@ -249,7 +250,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585709194096</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add external links">
+      <created>1585709858664</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1585709858664</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add external links">
+      <created>1585710058266</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1585710058266</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,17 +293,18 @@
     <MESSAGE value="rename grant to relief, add money formatting" />
     <MESSAGE value="fix nav button, update card link" />
     <MESSAGE value="related links positioning" />
-    <option name="LAST_COMMIT_MESSAGE" value="related links positioning" />
+    <MESSAGE value="add external links" />
+    <option name="LAST_COMMIT_MESSAGE" value="add external links" />
   </component>
   <component name="WindowStateProjectService">
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585338855957">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585338855957" />
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1585709858483">
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1585710058098">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585709858483" />
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585710058098" />
     <state x="756" y="460" key="Github.ShareDialog" timestamp="1585589676334">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -321,10 +337,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="711" y="448" key="VCS.ChangelistChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585664778241" />
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1585709843235">
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1585710059812">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585709843235" />
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585710059812" />
     <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585595602625">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
