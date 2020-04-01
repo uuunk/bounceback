@@ -38,8 +38,21 @@ const Half = tw.div`w-1/2`
 const CTACard = tw.div`w-1/2 m-12 p-12 rounded-xl bg-white`
 const CTAButton = tw.a`cursor-pointer text-center inline-block bg-darkblue text-white text-sm p-4 rounded mt-10 w-1/2 shadow-xl`
 
+const formatMoney = (number, decPlaces, decSep, thouSep) => {
+    const _decPlaces = isNaN(decPlaces = Math.abs(decPlaces)) ? 2 : decPlaces,
+        _decSep = typeof decSep === "undefined" ? "." : decSep;
+    thouSep = typeof thouSep === "undefined" ? "," : thouSep;
+    const sign = number < 0 ? "-" : "";
+    const i = String(parseInt(number = Math.abs(Number(number) || 0).toFixed(decPlaces)));
+    const j = i.length > 3 ? i.length % 3 : 0;
 
-export default class Grant extends React.Component {
+    return sign +
+        (j ? i.substr(0, j) + thouSep : "") +
+        i.substr(j).replace(/(\decSep{3})(?=\decSep)/g, "$1" + thouSep) +
+        (_decPlaces ? _decSep + Math.abs(number - i).toFixed(_decPlaces).slice(2) : "");
+};
+
+export default class Relief extends React.Component {
     state = {
         data: {
             fields: {}
@@ -48,7 +61,7 @@ export default class Grant extends React.Component {
 
     async componentDidMount() {
         const {match} = this.props;
-        const resp = await butter.page.retrieve('relief', match.params.grant);
+        const resp = await butter.page.retrieve('relief', match.params.slug);
         this.setState(resp.data);
     }
 
@@ -116,11 +129,11 @@ export default class Grant extends React.Component {
                                     <DisplayRow>
                                         {relief.fields.max_loan && (<InfoSet>
                                             <InfoSetTitle>Max Loan</InfoSetTitle>
-                                            <InfoSetText>{relief.fields.max_loan}</InfoSetText>
+                                            <InfoSetText>${formatMoney(relief.fields.max_loan, 0,'.',',')}</InfoSetText>
                                         </InfoSet>)}
                                         {relief.fields.max_grant && (<InfoSet>
                                             <InfoSetTitle>Max Grant</InfoSetTitle>
-                                            <InfoSetText>{relief.fields.max_grant}</InfoSetText>
+                                            <InfoSetText>${formatMoney(relief.fields.max_grant, 0,'.',',')}</InfoSetText>
                                         </InfoSet>)}
                                         <InfoSet>
                                             <InfoSetTitle>Location</InfoSetTitle>
