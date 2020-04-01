@@ -6,13 +6,25 @@ import 'tailwindcss/dist/components.css';
 import 'tailwindcss/dist/utilities.css';
 import 'font-awesome/css/font-awesome.min.css';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-
+import { Router, Route } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+import ReactGA from 'react-ga';
 import Relief from "./Relief";
 import Home from "./Home";
 
+const trackingId = "UA-162129906-1";
+ReactGA.initialize(trackingId);
+
+const history = createBrowserHistory();
+
+// Initialize google analytics page view tracking
+history.listen(location => {
+    ReactGA.set({ page: location.pathname }); // Update the user's current page
+    ReactGA.pageview(location.pathname); // Record a pageview for the given page
+});
+
 const AppRouter = () => (
-    <Router>
+    <Router history={history}>
         <div>
             <Route path='/' exact component={Home}/>
             <Route path='/relief/:slug' component={Relief}/>
