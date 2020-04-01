@@ -4,15 +4,16 @@ import styled from 'styled-components/macro';
 
 const Navbar = tw.nav`flex items-center justify-between p-1 h-20`;
 const Logo = styled.span(({invert})=> [
-    tw`font-bold text-xl tracking-tight mx-10`,
+    tw`font-bold md:text-xl tracking-tight mx-5 md:mx-10 `,
     invert ? tw`text-white` : tw`text-gray-900`
 ]);
 const Links = styled.div(({invert})=> [
-  tw`text-xs mr-10 lg:flex-grow`,
+  tw`hidden md:block text-xs mr-10 lg:flex-grow `,
     invert ? tw`text-white` : tw`text-gray-900`
 ]);
 const Button = styled.a(({invert}) => [
-    tw`cursor-pointer text-center inline-block px-8 py-2 border rounded-lg bg-transparent hover:border-transparent text-xs font-bold tracking-wider`,
+    tw`hidden cursor-pointer text-center md:inline-block px-8 py-2 border rounded-lg bg-transparent hover:border-transparent 
+    text-xs font-bold tracking-wider`,
     invert ? tw`border-white text-white hover:bg-white hover:text-blue-500 `
         : tw`border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white`
 ]);

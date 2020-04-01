@@ -12,17 +12,17 @@ import {Button} from "./styles";
 const BodyContainer = tw.div`flex flex-col min-h-screen`
 const PageContainer = tw.div`flex-1`;
 
-const TitleSection = tw.div`mx-40 my-32 flex mb-10 items-end`;
-const Section = tw.div`w-1/2`;
-const Sub = tw.span`text-gray-300 tracking-wider font-extrabold`;
-const Title = tw.div`text-5xl font-bold text-white mt-2`;
-const Description = tw.div`text-gray-300 mb-3 mx-12`;
+const TitleSection = tw.div`md:mx-40 md:my-32 flex-col md:flex-row flex md:mb-10 md:items-end`;
+const Section = tw.div`md:w-1/2`;
+const Sub = tw.span`ml-6 md:ml-0 text-sm md:text-base text-gray-300 tracking-wider font-extrabold`;
+const Title = tw.div`ml-6 md:ml-0 text-3xl md:text-5xl font-bold text-white mt-2`;
+const Description = tw.div`text-gray-300 ml-6 my-3 md:mx-12`;
 
-const DisplayContainer = tw.div`mx-40 mt-5 mb-20`;
-const Display = tw.form`bg-white rounded-xl p-12 shadow`;
-const DisplayTitle = tw.div`text-3xl font-bold mb-1`;
+const DisplayContainer = tw.div`md:mx-40 mt-5 mb-20`;
+const Display = tw.form`bg-white rounded-xl p-6 md:p-12 shadow`;
+const DisplayTitle = tw.div`text-2xl md:text-3xl font-bold mb-1`;
 const DisplayTitleSub = tw.div`text-gray-500`;
-const DisplayRow = tw.div`grid grid-cols-3 mt-12 mb-6 -mx-3`;
+const DisplayRow = tw.div`grid grid-cols-1 md:grid-cols-3 mt-8 md:mt-12 mb-6 -mx-3`;
 
 const DropDown = tw.div`px-3 mb-6 md:mb-0`;
 const DropDownLabel = tw.label`block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2`;
@@ -41,6 +41,7 @@ const DropDownSelect = styled(RawDDSelect)
 
 const DefaultButton = tw.button`bg-gray-200 border-transparent border-4 text-darkblue text-xs tracking-widest font-bold py-1 px-2 h-16 rounded-lg`
 const Submit = styled(DefaultButton)`${tw`w-full hover:text-white hover:bg-darkblue shadow`}`;
+const BackButton = styled(DefaultButton)`${tw`hidden md:block`}`
 
 const Card = tw.div`rounded-lg overflow-hidden shadow-lg mx-3 mb-6`;
 const CardImage = tw.img`w-full h-40 object-cover`;
@@ -113,7 +114,7 @@ export default class Home extends React.Component {
                         <DropDownLabel>Type Of Relief</DropDownLabel>
                         <DropDownSelect value={this.state.form.typeOfRelief} name="typeOfRelief"
                                         onChange={this.handleInputChange}>
-                            <option value="" disabled defaultValue>Select Resource</option>
+                            <option value="" defaultValue>Select Resource</option>
                             <option value="emergencyrelief">Emergency Relief</option>
                             <option value="technology">Technology</option>
                             <option value="grant">Grants</option>
@@ -124,7 +125,7 @@ export default class Home extends React.Component {
                         <DropDownLabel>Type Of Organization</DropDownLabel>
                         <DropDownSelect value={this.state.form.typeOfOrganization} name="typeOfOrganization"
                                         onChange={this.handleInputChange}>
-                            <option value="" disabled defaultValue>Select Company Type</option>
+                            <option value="" defaultValue>Select Company Type</option>
                             <option value="forprofit">For Profit</option>
                             <option value="nonprofit">Non-Profit</option>
                         </DropDownSelect>
@@ -133,7 +134,7 @@ export default class Home extends React.Component {
                         <DropDownLabel>Location</DropDownLabel>
                         <DropDownSelect value={this.state.form.location} name="location"
                                         onChange={this.handleInputChange}>
-                            <option value="" disabled defaultValue>Select Location</option>
+                            <option value="" defaultValue>Select Location</option>
                             <option value="alabama">Alabama</option>
                             <option value="alaska">Alaska</option>
                             <option value="arizona">Arizona</option>
@@ -277,7 +278,7 @@ export default class Home extends React.Component {
                                     <DisplayTitleSub>See what types of relief are available to your organization
                                         today.</DisplayTitleSub>
                                 </div>
-                                <div>{this.state.showResults && <DefaultButton>BACK TO SEARCH</DefaultButton>}</div>
+                                <div>{this.state.showResults && <BackButton>BACK TO SEARCH</BackButton>}</div>
                             </Flex>
                             {searchDisplay()}
                         </Display>
