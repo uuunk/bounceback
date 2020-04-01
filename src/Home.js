@@ -96,8 +96,8 @@ export default class Home extends React.Component {
         const value = target.value;
         const name = target.name;
 
-        this.setState( prevState => ({
-            form:{
+        this.setState(prevState => ({
+            form: {
                 ...prevState.form,
                 [name]: value
             }
@@ -121,7 +121,8 @@ export default class Home extends React.Component {
                     </DropDown>
                     <DropDown>
                         <DropDownLabel>Type Of Organization</DropDownLabel>
-                        <DropDownSelect value={this.state.form.typeOfOrganization} name="typeOfOrganization" onChange={this.handleInputChange}>
+                        <DropDownSelect value={this.state.form.typeOfOrganization} name="typeOfOrganization"
+                                        onChange={this.handleInputChange}>
                             <option value="" disabled selected>Select Company Type</option>
                             <option value="forprofit">For Profit</option>
                             <option value="nonprofit">Non-Profit</option>
@@ -129,59 +130,60 @@ export default class Home extends React.Component {
                     </DropDown>
                     <DropDown>
                         <DropDownLabel>Location</DropDownLabel>
-                        <DropDownSelect value={this.state.form.location} name="location" onChange={this.handleInputChange}>
+                        <DropDownSelect value={this.state.form.location} name="location"
+                                        onChange={this.handleInputChange}>
                             <option value="" disabled selected>Select Location</option>
-                            <option value="AL">Alabama</option>
-                            <option value="AK">Alaska</option>
-                            <option value="AZ">Arizona</option>
-                            <option value="AR">Arkansas</option>
-                            <option value="CA">California</option>
-                            <option value="CO">Colorado</option>
-                            <option value="CT">Connecticut</option>
-                            <option value="DE">Delaware</option>
-                            <option value="DC">District Of Columbia</option>
-                            <option value="FL">Florida</option>
-                            <option value="GA">Georgia</option>
-                            <option value="HI">Hawaii</option>
-                            <option value="ID">Idaho</option>
-                            <option value="IL">Illinois</option>
-                            <option value="IN">Indiana</option>
-                            <option value="IA">Iowa</option>
-                            <option value="KS">Kansas</option>
-                            <option value="KY">Kentucky</option>
-                            <option value="LA">Louisiana</option>
-                            <option value="ME">Maine</option>
-                            <option value="MD">Maryland</option>
-                            <option value="MA">Massachusetts</option>
-                            <option value="MI">Michigan</option>
-                            <option value="MN">Minnesota</option>
-                            <option value="MS">Mississippi</option>
-                            <option value="MO">Missouri</option>
-                            <option value="MT">Montana</option>
-                            <option value="NE">Nebraska</option>
-                            <option value="NV">Nevada</option>
-                            <option value="NH">New Hampshire</option>
-                            <option value="NJ">New Jersey</option>
-                            <option value="NM">New Mexico</option>
-                            <option value="NY">New York</option>
-                            <option value="NC">North Carolina</option>
-                            <option value="ND">North Dakota</option>
-                            <option value="OH">Ohio</option>
-                            <option value="OK">Oklahoma</option>
-                            <option value="OR">Oregon</option>
-                            <option value="PA">Pennsylvania</option>
-                            <option value="RI">Rhode Island</option>
-                            <option value="SC">South Carolina</option>
-                            <option value="SD">South Dakota</option>
-                            <option value="TN">Tennessee</option>
-                            <option value="TX">Texas</option>
-                            <option value="UT">Utah</option>
-                            <option value="VT">Vermont</option>
-                            <option value="VA">Virginia</option>
-                            <option value="WA">Washington</option>
-                            <option value="WV">West Virginia</option>
-                            <option value="WI">Wisconsin</option>
-                            <option value="WY">Wyoming</option>
+                            <option value="alabama">Alabama</option>
+                            <option value="alaska">Alaska</option>
+                            <option value="arizona">Arizona</option>
+                            <option value="arkansas">Arkansas</option>
+                            <option value="california">California</option>
+                            <option value="colorado">Colorado</option>
+                            <option value="connecticut">Connecticut</option>
+                            <option value="delaware">Delaware</option>
+                            <option value="dc">District Of Columbia</option>
+                            <option value="florida">Florida</option>
+                            <option value="georgia">Georgia</option>
+                            <option value="hawaii">Hawaii</option>
+                            <option value="idaho">Idaho</option>
+                            <option value="illinois">Illinois</option>
+                            <option value="indiana">Indiana</option>
+                            <option value="iowa">Iowa</option>
+                            <option value="kansas">Kansas</option>
+                            <option value="kentucky">Kentucky</option>
+                            <option value="louisiana">Louisiana</option>
+                            <option value="maine">Maine</option>
+                            <option value="maryland">Maryland</option>
+                            <option value="massachusetts">Massachusetts</option>
+                            <option value="michigan">Michigan</option>
+                            <option value="minnesota">Minnesota</option>
+                            <option value="mississippi">Mississippi</option>
+                            <option value="missouri">Missouri</option>
+                            <option value="montana">Montana</option>
+                            <option value="nebraska">Nebraska</option>
+                            <option value="nevada">Nevada</option>
+                            <option value="newhampshire">New Hampshire</option>
+                            <option value="newjersey">New Jersey</option>
+                            <option value="newmexico">New Mexico</option>
+                            <option value="newyork">New York</option>
+                            <option value="northcarolina">North Carolina</option>
+                            <option value="northdakota">North Dakota</option>
+                            <option value="ohio">Ohio</option>
+                            <option value="oklahoma">Oklahoma</option>
+                            <option value="oregon">Oregon</option>
+                            <option value="pennsylvania">Pennsylvania</option>
+                            <option value="rhodeisland">Rhode Island</option>
+                            <option value="southcarolina">South Carolina</option>
+                            <option value="southdakota">South Dakota</option>
+                            <option value="tennessee">Tennessee</option>
+                            <option value="texas">Texas</option>
+                            <option value="utah">Utah</option>
+                            <option value="vermont">Vermont</option>
+                            <option value="virginia">Virginia</option>
+                            <option value="washington">Washington</option>
+                            <option value="westvirginia">West Virginia</option>
+                            <option value="wisconsin">Wisconsin</option>
+                            <option value="wyoming">Wyoming</option>
                         </DropDownSelect>
                     </DropDown>
                 </DisplayRow>
@@ -219,7 +221,7 @@ export default class Home extends React.Component {
         const filteredPageData = pageData.filter(page => {
             return this.match(this.getReliefTypes(page), typeOfRelief) &&
                 this.match(this.getOrgType(page), typeOfOrganization) &&
-                this.match([this.getLocation(page)], location)
+                (this.match([this.getLocation(page)], location) || this.getLocation(page) === "unitedstates")
         });
         const cards = filteredPageData.map(page => (
             <Link to={"/grants/" + page.slug}>
@@ -264,8 +266,14 @@ export default class Home extends React.Component {
                     </TitleSection>
                     <DisplayContainer>
                         <Display>
-                            <DisplayTitle>Find The Right Grant</DisplayTitle>
-                            <DisplayTitleSub>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</DisplayTitleSub>
+                            <Flex>
+                                <div>
+                                    <DisplayTitle>Find The Right Grant</DisplayTitle>
+                                    <DisplayTitleSub>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit.</DisplayTitleSub>
+                                </div>
+                                <div>{this.state.showResults && <Button>BACK TO SEARCH</Button>}</div>
+                            </Flex>
                             {searchDisplay()}
                         </Display>
                     </DisplayContainer>

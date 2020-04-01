@@ -80,7 +80,8 @@ export default class Grant extends React.Component {
                                     </TwoThird>
                                     <RelatedLinks>
                                         <RelatedLinksTitle>Application Link</RelatedLinksTitle>
-                                        <AppLink>{relief.fields.application_link}</AppLink>
+                                        <AppLink>{relief.fields.application_link &&
+                                        relief.fields.application_link.split('/')[2]}</AppLink>
                                     </RelatedLinks>
                                 </Flex>
                                 <Divider/>
@@ -160,7 +161,7 @@ export default class Grant extends React.Component {
                             </Details>
                             <Flex>
                                 <CTACard>
-                                    <DetailsSectionTitle>Apply For Grant</DetailsSectionTitle>
+                                    <DetailsSectionTitle>Apply For Relief</DetailsSectionTitle>
                                     <DetailsSectionDescription>Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit.</DetailsSectionDescription>
                                     <CTAButton href={relief.fields.application_link}>APPLY NOW</CTAButton>
