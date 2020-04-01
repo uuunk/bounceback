@@ -13,7 +13,7 @@ const DetailsTitle = tw.div`text-5xl font-bold text-gray-900`
 const DetailsSub = tw.div`text-3xl text-gray-700 mb-1 -mt-2`
 const DetailsDescription = tw.div`text-gray-500`
 const Divider = tw.div`border border-solid border-gray-400 h-px my-6`
-const RelatedLinks = tw.div`w-1/3`
+const RelatedLinks = tw.div`w-1/3 mt-4`
 const RelatedLinksTitle = tw.div``
 const AppLink = tw.a`text-gray-500`
 const RelatedLinksLink = tw.li``
@@ -92,7 +92,7 @@ export default class Relief extends React.Component {
                                         <DetailsDescription>{relief.fields.description}</DetailsDescription>
                                     </TwoThird>
                                     <RelatedLinks>
-                                        <RelatedLinksTitle>Application Link</RelatedLinksTitle>
+                                        <RelatedLinksTitle>Application Site</RelatedLinksTitle>
                                         <AppLink>{relief.fields.application_link &&
                                         relief.fields.application_link.split('/')[2]}</AppLink>
                                     </RelatedLinks>
