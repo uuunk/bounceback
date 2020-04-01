@@ -6,38 +6,38 @@ import {Link} from "react-router-dom";
 import Footer from "./Footer";
 
 const BodyContainer = tw.div`flex flex-col min-h-screen`
-const PageContainer = tw.div`bg-gray-200 w-full h-full flex-1`
+const PageContainer = tw.div`bg-gray-200 w-full h-full flex-1 pb-6 md:pb-12`
 const HeroImage = tw.div`bg-cover bg-center`;
-const DetailsContainer = tw.div`mx-12 -mt-64`
-const Details = tw.div` flex flex-col w-auto mx-12 bg-white rounded-xl p-12`
-const DetailsTitle = tw.div`leading-none text-5xl font-bold text-gray-900 mb-2`
-const DetailsSub = tw.div`text-3xl text-gray-700 mb-3 -mt-2`
+const DetailsContainer = tw.div`md:mx-12 -mt-64`
+const Details = tw.div`flex flex-col w-auto mx-6 md:mx-12 bg-white rounded-xl p-6 md:p-12`
+const DetailsTitle = tw.div`leading-none text-3xl md:text-5xl font-bold text-gray-900 mb-2`
+const DetailsSub = tw.div`text-xl md:text-3xl text-gray-700 mb-3 md:-mt-2`
 const DetailsDescription = tw.div`text-gray-500`
 const Divider = tw.div`border border-solid border-gray-400 h-px my-6`
-const RelatedLinks = tw.div`w-1/3 mt-4`
+const RelatedLinks = tw.div`md:w-1/3 mt-4`
 const RelatedLinksTitle = tw.div``
 const AppLink = tw.a`text-gray-500`
 const RelatedLinksLink = tw.li``
 
 const DetailsSection = tw.div``
-const DetailsSectionTitle = tw.div`text-3xl font-bold mb-1 text-gray-900`
+const DetailsSectionTitle = tw.div`text-xl md:text-3xl font-bold mb-1 text-gray-900`
 const DetailsSectionDescription = tw.div`text-gray-500`
 
-const DisplayRow = tw.div`flex flex-wrap mt-10 mb-6 -mx-3`;
-const InfoSet = tw.div`flex-1 px-3 mb-6 md:mb-0`;
+const DisplayRow = tw.div`flex flex-wrap mt-6 lg:mt-10 lg:mb-6 -mx-3`;
+const InfoSet = tw.div`flex-auto px-3 mb-6 xl:mb-0`;
 const InfoSetTitle = tw.div`block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2`;
-const InfoSetText = tw.div`block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3
+const InfoSetText = tw.div`block appearance-none flex-auto w-full bg-gray-200 border border-gray-200 text-gray-700 py-3
                             px-4 pr-8 h-12 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500`;
 
-const DataNeeded = tw.ol`grid grid-rows-3 grid-flow-col px-5 py-1 text-gray-700 list-decimal h-20`
+const DataNeeded = tw.ol`grid grid-cols-1 xl:grid-rows-3 xl:grid-flow-col px-5 py-1 text-gray-700 list-decimal lg:h-20 mt-3 lg:mt-0`
 
-const Flex = tw.div`flex`
-const OneThird = tw.div`w-1/3`
-const TwoThird = tw.div`w-2/3 mr-4`
-const Half = tw.div`w-1/2`
+const Flex = tw.div`flex flex-col lg:flex-row`
+const OneThird = tw.div`lg:w-1/3`
+const TwoThird = tw.div`lg:w-2/3 md:mr-4`
+const Half = tw.div`lg:w-1/2`
 
-const CTACard = tw.div`w-1/2 m-12 p-12 rounded-xl bg-white`
-const CTAButton = tw.a`cursor-pointer text-center inline-block bg-darkblue text-white text-sm p-4 rounded mt-10 w-1/2 shadow-xl`
+const CTACard = tw.div`lg:w-1/2 mt-6 mx-6 p-6 md:mt-12 md:mx-12 md:p-12 rounded-xl bg-white`
+const CTAButton = tw.a`cursor-pointer text-center inline-block bg-darkblue text-white text-sm p-4 rounded mt-4 md:mt-10 w-1/2 shadow-xl`
 
 const formatMoney = (number, decPlaces, decSep, thouSep) => {
     const _decPlaces = isNaN(decPlaces = Math.abs(decPlaces)) ? 2 : decPlaces,
