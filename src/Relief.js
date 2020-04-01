@@ -5,7 +5,8 @@ import tw from "twin.macro";
 import {Link} from "react-router-dom";
 import Footer from "./Footer";
 
-const PageContainer = tw.div`bg-gray-200 w-full h-full`
+const BodyContainer = tw.div`flex flex-col min-h-screen`
+const PageContainer = tw.div`bg-gray-200 w-full h-full flex-1`
 const HeroImage = tw.div`bg-cover bg-center`;
 const DetailsContainer = tw.div`mx-12 -mt-64`
 const Details = tw.div` flex flex-col w-auto mx-12 bg-white rounded-xl p-12`
@@ -25,7 +26,7 @@ const DetailsSectionDescription = tw.div`text-gray-500`
 const DisplayRow = tw.div`flex flex-wrap mt-10 mb-6 -mx-3`;
 const InfoSet = tw.div`flex-1 px-3 mb-6 md:mb-0`;
 const InfoSetTitle = tw.div`block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2`;
-const InfoSetText = tw.div`block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 
+const InfoSetText = tw.div`block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3
                             px-4 pr-8 h-12 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500`;
 
 const DataNeeded = tw.ol`grid grid-rows-3 grid-flow-col px-5 py-1 text-gray-700 list-decimal h-20`
@@ -79,7 +80,7 @@ export default class Relief extends React.Component {
 
         if (relief) {
             return (
-                <>
+                <BodyContainer>
                     <Nav/>
                     <PageContainer>
                         <HeroImage style={{backgroundImage: `url(${relief.fields.hero_image})`, height: "600px"}}/>
@@ -184,7 +185,7 @@ export default class Relief extends React.Component {
                         </DetailsContainer>
                     </PageContainer>
                     <Footer background/>
-                </>
+                </BodyContainer>
             )
         } else {
             return <p>Loading...</p>

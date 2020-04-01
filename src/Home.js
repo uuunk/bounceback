@@ -9,7 +9,8 @@ import styled from "styled-components";
 import qs from "query-string";
 import {Button} from "./styles";
 
-const Container = tw.div``;
+const BodyContainer = tw.div`flex flex-col min-h-screen`
+const PageContainer = tw.div`flex-1`;
 
 const TitleSection = tw.div`mx-40 my-32 flex mb-10 items-end`;
 const Section = tw.div`w-1/2`;
@@ -253,9 +254,9 @@ export default class Home extends React.Component {
         };
 
         return (
-            <div className="background-gradient">
+            <BodyContainer className="background-gradient">
                 <Nav invert={true}/>
-                <Container className="container mx-auto">
+                <BodyContainer className="container mx-auto">
                     <TitleSection>
                         <Section>
                             <Sub>THESE ARE HARD TIMES</Sub>
@@ -279,9 +280,9 @@ export default class Home extends React.Component {
                             {searchDisplay()}
                         </Display>
                     </DisplayContainer>
-                </Container>
+                </BodyContainer>
                 <Footer/>
-            </div>
+            </BodyContainer>
         )
     }
 }
