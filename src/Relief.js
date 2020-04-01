@@ -28,7 +28,7 @@ const InfoSetTitle = tw.div`block uppercase tracking-wide text-gray-700 text-xs 
 const InfoSetText = tw.div`block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 
                             px-4 pr-8 h-12 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500`;
 
-const DataNeeded = tw.div`w-2/3 px-5 py-1 text-gray-700`
+const DataNeeded = tw.ol`grid grid-rows-3 grid-flow-col px-5 py-1 text-gray-700 list-decimal h-20`
 
 const Flex = tw.div`flex`
 const OneThird = tw.div`w-1/3`
