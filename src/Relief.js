@@ -100,8 +100,7 @@ export default class Relief extends React.Component {
                                 <Divider/>
                                 <DetailsSection>
                                     <DetailsSectionTitle>Profile Overview</DetailsSectionTitle>
-                                    <DetailsSectionDescription>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit.</DetailsSectionDescription>
+                                    <DetailsSectionDescription>Find out the commitment required to access this relief.</DetailsSectionDescription>
                                     <DisplayRow>
                                         <InfoSet>
                                             <InfoSetTitle>Complexity</InfoSetTitle>
@@ -124,8 +123,7 @@ export default class Relief extends React.Component {
                                 <Divider/>
                                 <DetailsSection>
                                     <DetailsSectionTitle>General Qualifications</DetailsSectionTitle>
-                                    <DetailsSectionDescription>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit.</DetailsSectionDescription>
+                                    <DetailsSectionDescription>The basic criteria you need to know before applying.</DetailsSectionDescription>
                                     <DisplayRow>
                                         {relief.fields.max_loan && (<InfoSet>
                                             <InfoSetTitle>Max Loan</InfoSetTitle>
@@ -162,8 +160,7 @@ export default class Relief extends React.Component {
                                 <Flex>
                                     <Half>
                                         <DetailsSectionTitle>Data Needed</DetailsSectionTitle>
-                                        <DetailsSectionDescription>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                            elit.</DetailsSectionDescription>
+                                        <DetailsSectionDescription>Prepare by collecting essential information and documents.</DetailsSectionDescription>
                                     </Half>
                                     <Half>
                                         <DataNeeded>
@@ -175,14 +172,12 @@ export default class Relief extends React.Component {
                             <Flex>
                                 <CTACard>
                                     <DetailsSectionTitle>Apply For Relief</DetailsSectionTitle>
-                                    <DetailsSectionDescription>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit.</DetailsSectionDescription>
+                                    <DetailsSectionDescription>We’re sending you to the application. Bounce Back if you need help.</DetailsSectionDescription>
                                     <CTAButton href={relief.fields.application_link}>APPLY NOW</CTAButton>
                                 </CTACard>
                                 <CTACard>
                                     <DetailsSectionTitle>Need Help?</DetailsSectionTitle>
-                                    <DetailsSectionDescription>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit.</DetailsSectionDescription>
+                                    <DetailsSectionDescription>15 minute consultations to discuss your organizational needs.</DetailsSectionDescription>
                                    <CTAButton href="https://go.oncehub.com/Angelos">HELP ME APPLY</CTAButton>
                                 </CTACard>
                             </Flex>
