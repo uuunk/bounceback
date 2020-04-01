@@ -12,7 +12,7 @@ const Links = styled.div(({invert})=> [
     invert ? tw`text-white` : tw`text-gray-900`
 ]);
 const Button = styled.button(({invert}) => [
-    tw`px-8 py-2 border rounded-lg bg-transparent hover:border-transparent`,
+    tw`px-8 py-2 border rounded-lg bg-transparent hover:border-transparent text-xs font-bold tracking-wider`,
     invert ? tw`border-white text-white hover:bg-white hover:text-blue-500 `
         : tw`border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white`
 ]);

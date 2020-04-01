@@ -226,7 +226,7 @@ export default class Home extends React.Component {
                 (this.match([this.getLocation(page)], location) || this.getLocation(page) === "unitedstates")
         });
         const cards = filteredPageData.map(page => (
-            <Link to={"/grants/" + page.slug}>
+            <Link to={"/relief/" + page.slug}>
                 <Card>
                     <CardImage src={page.fields.hero_image}/>
                     <CardText>
