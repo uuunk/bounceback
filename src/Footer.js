@@ -1,6 +1,5 @@
 import React from 'react';
 import tw from 'twin.macro';
-import styled from 'styled-components/macro';
 
 const Nav = tw.footer`flex items-center justify-between p-1 h-20`;
 const Text = tw.span`text-xs tracking-tight text-gray-200 mx-4`

@@ -2,7 +2,6 @@ import React from 'react'
 import butter from './butter-client'
 import Nav from "./Nav";
 import tw from "twin.macro";
-import {Link} from "react-router-dom";
 import Footer from "./Footer";
 
 const BodyContainer = tw.div`flex flex-col min-h-screen`
@@ -17,7 +16,7 @@ const Divider = tw.div`border border-solid border-gray-400 h-px my-6`
 const RelatedLinks = tw.div`md:w-1/3 mt-4`
 const RelatedLinksTitle = tw.div``
 const AppLink = tw.a`text-gray-500`
-const RelatedLinksLink = tw.li``
+// const RelatedLinksLink = tw.li``
 
 const DetailsSection = tw.div``
 const DetailsSectionTitle = tw.div`text-xl md:text-3xl font-bold mb-1 text-gray-900`
@@ -32,7 +31,6 @@ const InfoSetText = tw.div`block appearance-none flex-auto w-full bg-gray-200 bo
 const DataNeeded = tw.ol`grid grid-cols-1 xl:grid-rows-3 xl:grid-flow-col px-5 py-1 text-gray-700 list-decimal lg:h-20 mt-3 lg:mt-0`
 
 const Flex = tw.div`flex flex-col lg:flex-row`
-const OneThird = tw.div`lg:w-1/3`
 const TwoThird = tw.div`lg:w-2/3 md:mr-4`
 const Half = tw.div`lg:w-1/2`
 

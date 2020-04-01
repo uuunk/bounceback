@@ -7,7 +7,6 @@ import {Link} from 'react-router-dom';
 import Footer from "./Footer";
 import styled from "styled-components";
 import qs from "query-string";
-import {Button} from "./styles";
 
 const BodyContainer = tw.div`flex flex-col min-h-screen`
 const PageContainer = tw.div`flex-1`;
