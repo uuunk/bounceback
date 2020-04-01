@@ -228,7 +228,7 @@ export default class Home extends React.Component {
         });
         const cards = filteredPageData.map(page => (
             <Link to={"/relief/" + page.slug} key={page.slug}>
-                <Card>
+                <Card style={{height:"280px"}}>
                     <CardImage src={page.fields.hero_image}/>
                     <CardText>
                         {page.fields.optional_subhead &&

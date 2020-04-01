@@ -89,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585332309180</updated>
-      <workItem from="1585332312230" duration="67943000" />
+      <workItem from="1585332312230" duration="68145000" />
     </task>
     <task id="LOCAL-00001" summary="setup and rough sketch of home page">
       <created>1585408985463</created>
@@ -294,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585758981458</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="update home copy">
+      <created>1585759697577</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1585759697577</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +310,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="update details page w/ real data" />
     <MESSAGE value="add details page links" />
     <MESSAGE value="add footer, tweak navbar" />
     <MESSAGE value="add &quot;be vietnam&quot; font" />
@@ -328,17 +334,18 @@
     <MESSAGE value="update detail section spacing" />
     <MESSAGE value="fix console errors" />
     <MESSAGE value="add fluid footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="add fluid footer" />
+    <MESSAGE value="update home copy" />
+    <option name="LAST_COMMIT_MESSAGE" value="update home copy" />
   </component>
   <component name="WindowStateProjectService">
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585338855957">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585338855957" />
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1585758981311">
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1585759697433">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585758981311" />
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585759697433" />
     <state x="756" y="460" key="Github.ShareDialog" timestamp="1585589676334">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -371,10 +378,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="711" y="448" key="VCS.ChangelistChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585664778241" />
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1585712815196">
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1585759922450">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585712815196" />
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585759922450" />
     <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585595602625">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
