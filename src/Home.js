@@ -97,12 +97,14 @@ export default class Home extends React.Component {
         const value = target.value;
         const name = target.name;
 
-        this.setState(prevState => ({
-            form: {
-                ...prevState.form,
-                [name]: value
-            }
-        }));
+        if(value !== ""){
+            this.setState(prevState => ({
+                form: {
+                    ...prevState.form,
+                    [name]: value
+                }
+            }));
+        }
     }
 
     searchForm = () => {
