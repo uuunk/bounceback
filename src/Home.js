@@ -55,6 +55,10 @@ const setQueryString = qsValue => {
     window.history.pushState({path: newurl}, "", newurl);
 };
 
+const isEmpty = obj => {
+    return Object.keys(obj).length === 0;
+};
+
 export default class Home extends React.Component {
 
     constructor() {
@@ -73,16 +77,18 @@ export default class Home extends React.Component {
 
     async componentDidMount() {
         const resp = await butter.page.list('relief', {page_size:1000});
+        const queryString = qs.parse(this.props.location.search);
         this.setState({
             cms: resp.data,
-            form: qs.parse(this.props.location.search)
-        })
+            form: queryString,
+            showResults: !isEmpty(queryString)
+        });
         window.onpopstate = this.onBackButtonEvent.bind(this);
     }
 
     onBackButtonEvent(event) {
         event.preventDefault();
-        this.setState({showResults: false});
+        this.setState({showResults: false, form: {}});
     }
 
     handleSubmit(event) {
