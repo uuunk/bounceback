@@ -11,6 +11,7 @@ import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 import Relief from "./Relief";
 import Home from "./Home";
+import FAQ from "./FAQ";
 
 const trackingId = "UA-162129906-1";
 ReactGA.initialize(trackingId);
@@ -28,6 +29,7 @@ const AppRouter = () => (
         <div>
             <Route path='/' exact component={Home}/>
             <Route path='/relief/:slug' component={Relief}/>
+            <Route path='/faq' component={FAQ} />
         </div>
     </Router>
 );

@@ -1,6 +1,7 @@
 import React from 'react';
 import tw from 'twin.macro';
 import styled from "styled-components";
+import {Link} from "react-router-dom";
 
 const Nav = tw.footer`flex items-center justify-between p-1 h-20`;
 const Text = tw.span`text-xs tracking-tight text-gray-200 mx-1 md:mx-4`;
@@ -28,7 +29,7 @@ export default class Footer extends React.Component {
                     <Text as="a" href="https://docs.google.com/document/d/e/2PACX-1vQZoukZxPxam7kQK7DsFWXwzGljq9n2ACVjXiirHIcVC5vcOUK8Yt51dviAhHG8RZXP6hsAzGF8n4gK/pub">Terms & Privacy</Text>
                 </div>
                 <div>
-                    <RightText as="a" href="https://docs.google.com/document/d/e/2PACX-1vTWwAqLXiOnnAJmmNb63LZk3RkhKm1jLtON7DgE4GysWmTyHrcQDrKxxyJLXKXbxM6dC-CGVfJrstQv/pub">FAQS</RightText>
+                    <RightText><Link to="/faq">FAQS</Link></RightText>
                     <RightText as="a" href="https://www.cognitoforms.com/TheBounceBack1/ContactTheBounceBack">CONTACT US</RightText>
                 </div>
             </Nav>

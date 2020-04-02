@@ -1,6 +1,7 @@
 import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components/macro';
+import {Link} from "react-router-dom";
 
 const Navbar = tw.nav`flex items-center justify-between p-1 h-20`;
 const Logo = styled.span(({invert})=> [
@@ -8,7 +9,7 @@ const Logo = styled.span(({invert})=> [
     invert ? tw`text-white` : tw`text-gray-900`
 ]);
 const Links = styled.div(({invert})=> [
-  tw`hidden md:block text-xs mr-10 lg:flex-grow `,
+  tw`hidden md:block text-xs mr-10 lg:flex-grow  `,
     invert ? tw`text-white` : tw`text-gray-900`
 ]);
 const Button = styled.a(({invert}) => [
@@ -17,7 +18,7 @@ const Button = styled.a(({invert}) => [
     invert ? tw`border-white text-white hover:bg-white hover:text-blue-500 `
         : tw`border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white`
 ]);
-const Link = tw.a`px-2`;
+const RightText = tw.span`px-2`;
 
 
 export default class Nav extends React.Component {
@@ -34,8 +35,8 @@ export default class Nav extends React.Component {
                 </div>
                 <div>
                     <Links invert={invert}>
-                        <Link href="https://docs.google.com/document/d/e/2PACX-1vTWwAqLXiOnnAJmmNb63LZk3RkhKm1jLtON7DgE4GysWmTyHrcQDrKxxyJLXKXbxM6dC-CGVfJrstQv/pub">FAQS</Link>
-                        <Link href="https://www.cognitoforms.com/TheBounceBack1/ContactTheBounceBack">CONTACT US</Link>
+                        <RightText><Link to="/faq">FAQS</Link></RightText>
+                        <RightText as="a" href="https://www.cognitoforms.com/TheBounceBack1/ContactTheBounceBack">CONTACT US</RightText>
                     </Links>
                 </div>
             </Navbar>
