@@ -72,7 +72,7 @@ export default class Home extends React.Component {
     }
 
     async componentDidMount() {
-        const resp = await butter.page.list('relief');
+        const resp = await butter.page.list('relief', {page_size:1000});
         this.setState({
             cms: resp.data,
             form: qs.parse(this.props.location.search)

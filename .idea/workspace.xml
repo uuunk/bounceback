@@ -92,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585332309180</updated>
-      <workItem from="1585332312230" duration="76513000" />
+      <workItem from="1585332312230" duration="76726000" />
     </task>
     <task id="LOCAL-00001" summary="setup and rough sketch of home page">
       <created>1585408985463</created>
@@ -360,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585775917477</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="expand card height">
+      <created>1585790957846</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1585790957847</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +376,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="handle browser back button" />
     <MESSAGE value="fix search bug" />
     <MESSAGE value="update details, fix bug for new cms types" />
     <MESSAGE value="update location filter, grant button" />
@@ -394,17 +400,18 @@
     <MESSAGE value="add GA tag" />
     <MESSAGE value="update page title and favicon" />
     <MESSAGE value="fix linting errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix linting errors" />
+    <MESSAGE value="expand card height" />
+    <option name="LAST_COMMIT_MESSAGE" value="expand card height" />
   </component>
   <component name="WindowStateProjectService">
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585774286503">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585774286503" />
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1585775917344">
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1585790957145">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585775917344" />
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585790957145" />
     <state x="145" y="66" key="DiffContextDialog" timestamp="1585774325070">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
