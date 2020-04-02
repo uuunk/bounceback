@@ -116,7 +116,6 @@ export default class Home extends React.Component {
                         <DropDownSelect value={this.state.form.typeOfRelief} name="typeOfRelief"
                                         onChange={this.handleInputChange}>
                             <option value="" defaultValue>Select Resource</option>
-                            <option value="emergencyrelief">Emergency Relief</option>
                             <option value="technology">Technology</option>
                             <option value="grant">Grants</option>
                             <option value="loan">Loans</option>
@@ -129,6 +128,7 @@ export default class Home extends React.Component {
                             <option value="" defaultValue>Select Company Type</option>
                             <option value="forprofit">For Profit</option>
                             <option value="nonprofit">Non-Profit</option>
+                            <option value="individual">Individual</option>
                         </DropDownSelect>
                     </DropDown>
                     <DropDown>
