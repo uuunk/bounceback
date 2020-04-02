@@ -21,9 +21,9 @@ const DisplayContainer = tw.div`md:mx-40 mt-5 mb-20`;
 const Display = tw.form`bg-white rounded-xl p-6 md:p-12 shadow`;
 const DisplayTitle = tw.div`text-2xl md:text-3xl font-bold mb-1`;
 const DisplayTitleSub = tw.div`text-gray-500`;
-const DisplayRow = tw.div`grid grid-cols-1 md:grid-cols-3 mt-8 md:mt-12 mb-6 -mx-3`;
+const DisplayRow = tw.div`grid grid-cols-1 lg:grid-cols-3 mt-8 lg:mt-12 mb-6 -mx-3`;
 
-const DropDown = tw.div`px-3 mb-6 md:mb-0`;
+const DropDown = tw.div`px-3 mb-6 lg:mb-0`;
 const DropDownLabel = tw.label`block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2`;
 const RawDDSelect = tw.select`block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 
         h-12 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-gray-500`
