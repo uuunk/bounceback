@@ -144,7 +144,7 @@ export default class Home extends React.Component {
                             <option value="colorado">Colorado</option>
                             <option value="connecticut">Connecticut</option>
                             <option value="delaware">Delaware</option>
-                            <option value="dc">District Of Columbia</option>
+                            <option value="districtofcolumbia">District Of Columbia</option>
                             <option value="florida">Florida</option>
                             <option value="georgia">Georgia</option>
                             <option value="hawaii">Hawaii</option>
@@ -196,19 +196,19 @@ export default class Home extends React.Component {
     };
 
     clean = string => {
-        return string.replace('-', '').replace(' ', '')
+        return string.replace('-', '').replace(' ', '').toLowerCase()
     };
 
     getReliefTypes = page => {
-        return page.fields.relief_type.map(t => this.clean(t.type).toLowerCase())
+        return page.fields.relief_type.map(t => this.clean(t.type))
     };
 
     getOrgType = page => {
-        return page.fields.organization_type.map(t => this.clean(t.organization_type).toLowerCase())
+        return page.fields.organization_type.map(t => this.clean(t.organization_type))
     };
 
     getLocation = page => {
-        return this.clean(page.fields.location || "").toLowerCase()
+        return this.clean(page.fields.location || "")
     };
 
     match(array, searchTerm) {

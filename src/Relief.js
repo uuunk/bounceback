@@ -139,7 +139,7 @@ export default class Relief extends React.Component {
                                         {relief.fields.organization_type && (
                                         <InfoSet>
                                             <InfoSetTitle>Organization Type</InfoSetTitle>
-                                            <InfoSetText>{relief.fields.organization_type[0].organization_type}</InfoSetText>
+                                            <InfoSetText>{relief.fields.organization_type.map(t=>t.organization_type).toString().replace(',',', ')}</InfoSetText>
                                         </InfoSet>)}
                                         {relief.fields.availability && (<InfoSet>
                                             <InfoSetTitle>Availability</InfoSetTitle>
