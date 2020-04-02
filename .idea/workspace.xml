@@ -4,6 +4,7 @@
     <list default="true" id="a1461c60-e928-45aa-99e1-650b0f0cef4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Relief.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Relief.js" afterDir="false" />
     </list>
     <list id="71bbb8cc-3381-455b-a926-3ea72d76a5b1" name=".idea" comment=".idea" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585332309180</updated>
-      <workItem from="1585332312230" duration="76726000" />
+      <workItem from="1585332312230" duration="77218000" />
     </task>
     <task id="LOCAL-00001" summary="setup and rough sketch of home page">
       <created>1585408985463</created>
@@ -367,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585790957847</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="return more results">
+      <created>1585791351543</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1585791351543</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +384,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fix search bug" />
     <MESSAGE value="update details, fix bug for new cms types" />
     <MESSAGE value="update location filter, grant button" />
     <MESSAGE value="fix back button" />
@@ -401,17 +408,18 @@
     <MESSAGE value="update page title and favicon" />
     <MESSAGE value="fix linting errors" />
     <MESSAGE value="expand card height" />
-    <option name="LAST_COMMIT_MESSAGE" value="expand card height" />
+    <MESSAGE value="return more results" />
+    <option name="LAST_COMMIT_MESSAGE" value="return more results" />
   </component>
   <component name="WindowStateProjectService">
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585774286503">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585774286503" />
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1585790957145">
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1585791351386">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585790957145" />
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585791351386" />
     <state x="145" y="66" key="DiffContextDialog" timestamp="1585774325070">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -448,10 +456,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="711" y="448" key="VCS.ChangelistChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585664778241" />
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1585775735127">
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1585791355729">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585775735127" />
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585791355729" />
     <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585595602625">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

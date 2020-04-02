@@ -149,10 +149,10 @@ export default class Relief extends React.Component {
                                             <InfoSetTitle>End Date</InfoSetTitle>
                                             <InfoSetText>{relief.fields.end_date}</InfoSetText>
                                         </InfoSet>
-                                        <InfoSet>
+                                        {relief.fields.industry && (<InfoSet>
                                             <InfoSetTitle>Industry</InfoSetTitle>
                                             <InfoSetText>{relief.fields.industry}</InfoSetText>
-                                        </InfoSet>
+                                        </InfoSet>)}
                                     </DisplayRow>
                                 </DetailsSection>
                                 <Divider/>

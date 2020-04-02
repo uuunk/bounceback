@@ -206,7 +206,7 @@ export default class Home extends React.Component {
     };
 
     getLocation = page => {
-        return this.clean(page.fields.location || "")
+        return this.clean(page.fields.location || "").toLowerCase()
     };
 
     match(array, searchTerm) {
