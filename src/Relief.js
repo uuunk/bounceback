@@ -3,11 +3,13 @@ import butter from './butter-client'
 import Nav from "./Nav";
 import tw from "twin.macro";
 import Footer from "./Footer";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 const BodyContainer = tw.div`flex flex-col min-h-screen`
 const PageContainer = tw.div`bg-gray-200 w-full h-full flex-1 pb-6 md:pb-12`
 const HeroImage = tw.div`bg-cover bg-center`;
-const DetailsContainer = tw.div`md:mx-12 -mt-64`
+const DetailsContainer = tw.div`relative md:mx-12 -mt-64`
 const Details = tw.div`flex flex-col w-auto mx-6 md:mx-12 bg-white rounded-xl p-6 md:p-12`
 const DetailsTitle = tw.div`leading-none text-3xl md:text-5xl font-bold text-gray-900 mb-2`
 const DetailsSub = tw.div`text-xl md:text-3xl text-gray-700 mb-3 md:-mt-2`
@@ -17,6 +19,7 @@ const RelatedLinks = tw.div`md:w-1/3 mt-4`
 const RelatedLinksTitle = tw.div``
 const AppLink = tw.a`text-gray-500`
 // const RelatedLinksLink = tw.li``
+const BackLink = tw.a`absolute ml-10 md:ml-20 text-gray-300 left-0 top-0 -mt-10 font-bold hover:underline tracking-wide cursor-pointer`
 
 const DetailsSection = tw.div``
 const DetailsSectionTitle = tw.div`text-xl md:text-3xl font-bold mb-1 text-gray-900`
@@ -57,7 +60,12 @@ export default class Relief extends React.Component {
         const {match} = this.props;
         const resp = await butter.page.retrieve('relief', match.params.slug);
         this.setState(resp.data);
+        this.goBack = this.goBack.bind(this);
     }
+
+    goBack = (e) => {
+        this.props.history.goBack();
+    };
 
     render() {
 
@@ -78,6 +86,7 @@ export default class Relief extends React.Component {
                     <PageContainer>
                         <HeroImage style={{backgroundImage: `url(${relief.fields.hero_image})`, height: "600px"}}/>
                         <DetailsContainer>
+                            <BackLink onClick={this.goBack}><FontAwesomeIcon icon={faChevronLeft}/> BACK TO ALL</BackLink>
                             <Details>
                                 <Flex>
                                     <TwoThird>

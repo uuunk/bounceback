@@ -4,7 +4,6 @@ import './index.css';
 import 'tailwindcss/dist/base.css';
 import 'tailwindcss/dist/components.css';
 import 'tailwindcss/dist/utilities.css';
-import 'font-awesome/css/font-awesome.min.css';
 import * as serviceWorker from './serviceWorker';
 import { Router, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
