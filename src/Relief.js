@@ -172,7 +172,7 @@ export default class Relief extends React.Component {
                                 <CTACard>
                                     <DetailsSectionTitle>Need Help?</DetailsSectionTitle>
                                     <DetailsSectionDescription>15 minute consultations to discuss your organizational needs.</DetailsSectionDescription>
-                                   <CTAButton href="https://go.oncehub.com/Angelos">HELP ME APPLY</CTAButton>
+                                   <CTAButton href="https://go.oncehub.com/TheBounceBack">HELP ME APPLY</CTAButton>
                                 </CTACard>
                             </Flex>
                         </DetailsContainer>
