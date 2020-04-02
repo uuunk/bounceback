@@ -57,8 +57,7 @@ export default class FAQ extends React.Component {
                 <BodyContainer>
                     <Hero className="background-gradient">
                         <div><Title>Frequently Asked Questions</Title></div>
-                        <div><Sub>salkjsdf lsflkjsdf lksfj asflkj sfkj sflkjsf lkjasfklsafj lkasfj sfalkj sadflkjafsdlkj
-                            fsadlkj</Sub></div>
+                        <div><Sub>{faqData.fields && faqData.fields.description}</Sub></div>
                     </Hero>
                     <DisplayContainer>
                         {faqs && (<Display>

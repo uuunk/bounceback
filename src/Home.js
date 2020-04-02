@@ -93,8 +93,8 @@ export default class Home extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        const query = "?" + qs.stringify(this.state.form);
-        setQueryString(query);
+        const query = qs.stringify(this.state.form);
+        query && setQueryString("?" + query);
         this.setState({showResults: true})
     }
 
