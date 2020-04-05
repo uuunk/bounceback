@@ -125,6 +125,7 @@ export default class Home extends React.Component {
                             <option value="technology">Technology</option>
                             <option value="grant">Grants</option>
                             <option value="loan">Loans</option>
+                            <option value="supportservices">Support Services</option>
                         </DropDownSelect>
                     </DropDown>
                     <DropDown>
@@ -146,12 +147,12 @@ export default class Home extends React.Component {
                             {/*<option value="alaska">Alaska</option>*/}
                             {/*<option value="arizona">Arizona</option>*/}
                             {/*<option value="arkansas">Arkansas</option>*/}
-                            {/*<option value="california">California</option>*/}
+                            <option value="california">California</option>
                             {/*<option value="colorado">Colorado</option>*/}
                             {/*<option value="connecticut">Connecticut</option>*/}
                             {/*<option value="delaware">Delaware</option>*/}
                             {/*<option value="districtofcolumbia">District Of Columbia</option>*/}
-                            {/*<option value="florida">Florida</option>*/}
+                            <option value="florida">Florida</option>
                             {/*<option value="georgia">Georgia</option>*/}
                             {/*<option value="hawaii">Hawaii</option>*/}
                             {/*<option value="idaho">Idaho</option>*/}
@@ -163,7 +164,7 @@ export default class Home extends React.Component {
                             {/*<option value="louisiana">Louisiana</option>*/}
                             {/*<option value="maine">Maine</option>*/}
                             {/*<option value="maryland">Maryland</option>*/}
-                            {/*<option value="massachusetts">Massachusetts</option>*/}
+                            <option value="massachusetts">Massachusetts</option>
                             <option value="michigan">Michigan</option>
                             <option value="minnesota">Minnesota</option>
                             {/*<option value="mississippi">Mississippi</option>*/}
@@ -174,7 +175,7 @@ export default class Home extends React.Component {
                             {/*<option value="newhampshire">New Hampshire</option>*/}
                             {/*<option value="newjersey">New Jersey</option>*/}
                             {/*<option value="newmexico">New Mexico</option>*/}
-                            {/*<option value="newyork">New York</option>*/}
+                            <option value="newyork">New York</option>
                             {/*<option value="northcarolina">North Carolina</option>*/}
                             {/*<option value="northdakota">North Dakota</option>*/}
                             <option value="ohio">Ohio</option>
