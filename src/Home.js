@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom';
 import Footer from "./Footer";
 import styled from "styled-components";
 import qs from "query-string";
+import SearchUseCaseComponent from "./SearchUseCaseComponent";
 
 const BodyContainer = tw.div`flex flex-col min-h-screen`
 const PageContainer = tw.div`flex-1`;
@@ -14,12 +15,12 @@ const PageContainer = tw.div`flex-1`;
 const TitleSection = tw.div`md:mx-40 md:my-32 flex-col md:flex-row flex md:mb-10 md:items-end`;
 const Section = tw.div`md:w-1/2`;
 const Sub = tw.span`ml-6 md:ml-0 text-sm md:text-base text-gray-300 tracking-wider font-extrabold`;
-const Title = tw.div`ml-6 md:ml-0 text-3xl md:text-5xl font-bold text-white mt-2`;
+const Title = tw.h1`ml-6 md:ml-0 text-3xl md:text-5xl font-bold text-white mt-2`;
 const Description = tw.div`text-gray-300 ml-6 my-3 md:mx-12`;
 
-const DisplayContainer = tw.div`md:mx-40 mt-5 mb-20`;
+const DisplayContainer = tw.div`md:mx-40 mt-5 mb-8`;
 const Display = tw.form`bg-white rounded-xl p-6 md:p-12 shadow`;
-const DisplayTitle = tw.div`text-2xl md:text-3xl font-bold mb-1`;
+const DisplayTitle = tw.div`text-2xl md:text-3xl font-bold mb-1 text-gray-900`;
 const DisplayTitleSub = tw.div`text-gray-500`;
 const DisplayRow = tw.div`grid grid-cols-1 lg:grid-cols-3 mt-8 lg:mt-12 mb-6 -mx-3`;
 
@@ -76,7 +77,7 @@ export default class Home extends React.Component {
     }
 
     async componentDidMount() {
-        const resp = await butter.page.list('relief', {page_size:1000});
+        const resp = await butter.page.list('relief', {page_size: 1000});
         const queryString = qs.parse(this.props.location.search);
         this.setState({
             cms: resp.data,
@@ -103,7 +104,7 @@ export default class Home extends React.Component {
         const value = target.value;
         const name = target.name;
 
-        if(value !== ""){
+        if (value !== "") {
             this.setState(prevState => ({
                 form: {
                     ...prevState.form,
@@ -236,7 +237,7 @@ export default class Home extends React.Component {
         });
         const cards = filteredPageData.map(page => (
             <Link to={"/relief/" + page.slug} key={page.slug}>
-                <Card style={{height:"305px"}}>
+                <Card style={{height: "305px"}}>
                     <CardImage src={page.fields.hero_image}/>
                     <CardText>
                         {page.fields.optional_subhead &&
@@ -290,6 +291,7 @@ export default class Home extends React.Component {
                             {searchDisplay()}
                         </Display>
                     </DisplayContainer>
+                    <SearchUseCaseComponent/>
                 </BodyContainer>
                 <Footer/>
             </PageContainer>
