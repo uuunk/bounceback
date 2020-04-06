@@ -292,7 +292,7 @@ export default class Home extends React.Component {
                             {searchDisplay()}
                         </Display>
                     </DisplayContainer>
-                    <SearchUseCaseComponent/>
+                    {!this.state.showResults && <SearchUseCaseComponent/>}
                 </BodyContainer>
                 <Footer/>
             </PageContainer>
