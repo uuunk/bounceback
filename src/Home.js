@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import styled from "styled-components";
 import qs from "query-string";
 import SearchUseCaseComponent from "./SearchUseCaseComponent";
+import LastUpdated from "./LastUpdated";
 
 const BodyContainer = tw.div`flex flex-col min-h-screen`
 const PageContainer = tw.div`flex-1`;
@@ -294,6 +295,7 @@ export default class Home extends React.Component {
                     </DisplayContainer>
                     {!this.state.showResults && <SearchUseCaseComponent/>}
                 </BodyContainer>
+                <LastUpdated/>
                 <Footer/>
             </PageContainer>
         )
