@@ -279,7 +279,7 @@ export default class Home extends React.Component {
     return (
       <React.Fragment>
         <DisplayRow>
-          {cards.length > 0 || (
+          {(cards.length > 0 && cards) || (
             <NoResults>
               No Resources Available. Try changing your search parameters.
             </NoResults>
