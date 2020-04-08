@@ -1,8 +1,8 @@
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import tw from "twin.macro";
-import butter from './butter-client'
+import butter from "./butter-client";
 
 const SearchUseCaseContainer = tw.div`md:mx-40 mt-5 mb-10`;
 const SearchUseCaseDisplay = tw.div`bg-white rounded-xl p-6 md:p-12 shadow`;
@@ -16,40 +16,48 @@ const Paragraph = tw.p`text-gray-500 mb-2`;
 const SearchLink = tw.a`block font-bold tracking-widest text-right p-2 text-gray-900 hover:text-darkblue cursor-pointer`;
 
 export default class SearchUseCaseComponent extends React.Component {
-    state = {
-        search_use_cases: [{
-            search_params_href: '',
-            header: '',
-            body: '',
-            image: '',
-        }],
-    };
+  state = {
+    search_use_cases: [
+      {
+        search_params_href: "",
+        header: "",
+        body: "",
+        image: ""
+      }
+    ]
+  };
 
-    async componentDidMount () {
-        const resp = await butter.content.retrieve([ 'search_use_cases' ])
-        this.setState(resp.data.data)
-    }
+  async componentDidMount() {
+    const resp = await butter.content.retrieve(["search_use_cases"]);
+    this.setState(resp.data.data);
+  }
 
-    render() {
-        return (
-            <SearchUseCaseContainer>
-                <SearchUseCaseDisplay>
-                    <SearchUseCaseTitle>How can I use The Bounce Back?</SearchUseCaseTitle>
-                    <SearchUseCaseTitleSub>You can start the bounce back today. Relief is here.</SearchUseCaseTitleSub>
-                    {this.state.search_use_cases.map( use_case => {
-                        return (
-                            <SearchUseCase>
-                                <Image src={use_case.image}/>
-                                <UseCaseContent>
-                                    <Heading>{use_case.header}</Heading>
-                                    <Paragraph>{use_case.body}</Paragraph>
-                                    <SearchLink href={use_case.search_params_href}>FIND RELIEF HERE <FontAwesomeIcon icon={faChevronRight}/></SearchLink>
-                                </UseCaseContent>
-                            </SearchUseCase>
-                        )
-                    })}
-                </SearchUseCaseDisplay>
-            </SearchUseCaseContainer>
-        )
-    }
+  render() {
+    return (
+      <SearchUseCaseContainer>
+        <SearchUseCaseDisplay>
+          <SearchUseCaseTitle>
+            How can I use The Bounce Back?
+          </SearchUseCaseTitle>
+          <SearchUseCaseTitleSub>
+            You can start the bounce back today. Relief is here.
+          </SearchUseCaseTitleSub>
+          {this.state.search_use_cases.map(use_case => {
+            return (
+              <SearchUseCase>
+                <Image src={use_case.image} />
+                <UseCaseContent>
+                  <Heading>{use_case.header}</Heading>
+                  <Paragraph>{use_case.body}</Paragraph>
+                  <SearchLink href={use_case.search_params_href}>
+                    FIND RELIEF HERE <FontAwesomeIcon icon={faChevronRight} />
+                  </SearchLink>
+                </UseCaseContent>
+              </SearchUseCase>
+            );
+          })}
+        </SearchUseCaseDisplay>
+      </SearchUseCaseContainer>
+    );
+  }
 }
