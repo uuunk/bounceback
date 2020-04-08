@@ -11,6 +11,7 @@ import ReactGA from "react-ga";
 import Relief from "./Relief";
 import Home from "./Home";
 import FAQ from "./FAQ";
+import TagManager from "react-gtm-module";
 
 const trackingId = "UA-162129906-1";
 ReactGA.initialize(trackingId);
@@ -22,6 +23,12 @@ history.listen(location => {
   ReactGA.set({ page: location.pathname }); // Update the user's current page
   ReactGA.pageview(location.pathname); // Record a pageview for the given page
 });
+
+const tagManagerArgs = {
+  gtmId: "GTM-PPDNPRC"
+};
+
+TagManager.initialize(tagManagerArgs);
 
 const AppRouter = () => (
   <Router history={history}>

@@ -38,7 +38,6 @@ class RelatedRelief extends Component {
     const params = { page_size: 50, ...fields };
     const resp = await butter.page.list("relief", params);
 
-    debugger;
     this.setState({ data: getRandom(resp.data.data, 3) });
   }
 
