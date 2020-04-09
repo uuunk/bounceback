@@ -183,7 +183,7 @@ export default class Relief extends React.Component {
                         </InfoSetText>
                       </InfoSet>
                     )}
-                    {relief.fields.availability && (
+                    {relief.fields.availability[0] && (
                       <InfoSet>
                         <InfoSetTitle>Availability</InfoSetTitle>
                         <InfoSetText>
