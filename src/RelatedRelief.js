@@ -4,17 +4,19 @@ import ReliefCard from "./ReliefCard";
 import tw from "twin.macro";
 
 const getRandom = (arr, n) => {
-  var result = new Array(n),
-    len = arr.length,
-    taken = new Array(len);
-  if (n > len)
-    throw new RangeError("getRandom: more elements taken than available");
-  while (n--) {
-    var x = Math.floor(Math.random() * len);
-    result[n] = arr[x in taken ? taken[x] : x];
-    taken[x] = --len in taken ? taken[len] : len;
-  }
-  return result;
+  if (arr.length > n) {
+    var result = new Array(n),
+      len = arr.length,
+      taken = new Array(len);
+    if (n > len)
+      throw new RangeError("getRandom: more elements taken than available");
+    while (n--) {
+      var x = Math.floor(Math.random() * len);
+      result[n] = arr[x in taken ? taken[x] : x];
+      taken[x] = --len in taken ? taken[len] : len;
+    }
+    return result;
+  } else return arr;
 };
 
 const RelatedContainer = tw.div`mt-12 w-auto mx-6 md:mx-12 bg-white rounded-xl p-6 md:p-12`;
@@ -38,15 +40,19 @@ class RelatedRelief extends Component {
     const params = { page_size: 50, ...fields };
     const resp = await butter.page.list("relief", params);
 
-    this.setState({ data: getRandom(resp.data.data, 3) });
+    this.setState({ data: resp.data.data });
   }
 
   render() {
+    const filteredPages = this.state.data.filter(
+      page => page.fields.seo_title !== this.props.currentPageKey
+    );
+    const pages = getRandom(filteredPages, 3);
     return (
       <RelatedContainer>
         <Title>Related Relief Opportunities</Title>
         <RelatedRow>
-          {this.state.data.map(page => (
+          {pages.map(page => (
             <ReliefCard key={page.slug} page={page} />
           ))}
         </RelatedRow>

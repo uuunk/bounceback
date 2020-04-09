@@ -55,11 +55,24 @@ export default class Relief extends React.Component {
     data: {}
   };
 
-  async componentDidMount() {
-    const { match } = this.props;
-    const resp = await butter.page.retrieve("relief", match.params.slug);
-    this.setState(resp.data);
+  componentDidMount() {
     this.goBack = this.goBack.bind(this);
+    this.loadPage = this.loadPage.bind(this);
+    const { match } = this.props;
+    this.loadPage(match.params.slug);
+  }
+
+  componentDidUpdate(prevProps) {
+    const { match } = this.props;
+    if (match.params.slug !== prevProps.match.params.slug) {
+      this.loadPage(match.params.slug);
+      window.scrollTo(0, 0);
+    }
+  }
+
+  async loadPage(slug) {
+    const resp = await butter.page.retrieve("relief", slug);
+    this.setState(resp.data);
   }
 
   goBack = e => {
@@ -244,6 +257,7 @@ export default class Relief extends React.Component {
                   organization_type:
                     relief.fields.organization_type[0].organization_type
                 }}
+                currentPageKey={relief.fields.seo_title}
                 numCards="3"
               />
             </DetailsContainer>

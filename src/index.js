@@ -5,7 +5,7 @@ import "tailwindcss/dist/base.css";
 import "tailwindcss/dist/components.css";
 import "tailwindcss/dist/utilities.css";
 import * as serviceWorker from "./serviceWorker";
-import { Router, Route } from "react-router-dom";
+import { Router, Route, Switch } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import ReactGA from "react-ga";
 import Relief from "./Relief";
@@ -33,9 +33,11 @@ TagManager.initialize(tagManagerArgs);
 const AppRouter = () => (
   <Router history={history}>
     <div>
-      <Route path="/" exact component={Home} />
-      <Route path="/relief/:slug" component={Relief} />
-      <Route path="/faq" component={FAQ} />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/faq" component={FAQ} />
+        <Route path="/relief/:slug" exact component={Relief} />
+      </Switch>
     </div>
   </Router>
 );

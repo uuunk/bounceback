@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a1461c60-e928-45aa-99e1-650b0f0cef4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RelatedRelief.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/RelatedRelief.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Relief.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Relief.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <list id="71bbb8cc-3381-455b-a926-3ea72d76a5b1" name=".idea" comment=".idea" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,21 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585332309180</updated>
       <workItem from="1585332312230" duration="92849000" />
-      <workItem from="1586269044867" duration="9423000" />
-    </task>
-    <task id="LOCAL-00011" summary="add results filtering">
-      <created>1585676282879</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1585676282879</updated>
-    </task>
-    <task id="LOCAL-00012" summary="add filter results to querystring, parse from query string">
-      <created>1585677940962</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1585677940965</updated>
+      <workItem from="1586269044867" duration="13847000" />
     </task>
     <task id="LOCAL-00013" summary="handle browser back button">
       <created>1585680977100</created>
@@ -452,7 +440,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586312528182</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="fix no results bug">
+      <created>1586365181474</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1586365181474</updated>
+    </task>
+    <task id="LOCAL-00061" summary="fix availability bug">
+      <created>1586444951681</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1586444951682</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,8 +463,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add redirects file" />
-    <MESSAGE value="add GA tag" />
     <MESSAGE value="update page title and favicon" />
     <MESSAGE value="fix linting errors" />
     <MESSAGE value="expand card height" />
@@ -486,7 +486,9 @@
     <MESSAGE value="add related relief opportunities" />
     <MESSAGE value="swap GTM, remove debugger" />
     <MESSAGE value="fix no results message" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix no results message" />
+    <MESSAGE value="fix no results bug" />
+    <MESSAGE value="fix availability bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix availability bug" />
   </component>
   <component name="WindowStateProjectService">
     <state x="496" y="225" key="#File_Watchers" timestamp="1586204567763">
@@ -497,10 +499,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="546" y="370" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585774286503" />
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1586312528049">
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2" timestamp="1586444951538">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1586312528049" />
+    <state x="317" y="78" width="1088" height="894" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1586444951538" />
     <state x="145" y="66" key="DiffContextDialog" timestamp="1586187715180">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -582,10 +584,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="711" y="448" key="VCS.ChangelistChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585664778241" />
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1586312579581">
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1586444954246">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1586312579581" />
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1586444954246" />
     <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585595602625">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
