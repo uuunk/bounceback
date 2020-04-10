@@ -263,7 +263,8 @@ export default class Home extends React.Component {
 
   searchResults = () => {
     const { typeOfRelief, typeOfOrganization, location } = this.state.form;
-    const pageData = this.state.cms.data || [];
+
+    const pageData = (this.state.cms && this.state.cms.data) || [];
     const filteredPageData = pageData.filter(page => {
       return (
         this.match(this.getReliefTypes(page), typeOfRelief) &&
