@@ -12,6 +12,7 @@ import Relief from "./Relief";
 import Home from "./Home";
 import FAQ from "./FAQ";
 import TagManager from "react-gtm-module";
+import "typeface-be-vietnam";
 
 const trackingId = "UA-162129906-1";
 ReactGA.initialize(trackingId);
