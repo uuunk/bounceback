@@ -15,9 +15,9 @@ const PageContainer = tw.div`flex-1`;
 
 const TitleSection = tw.div`md:mx-40 md:my-32 flex-col md:flex-row flex md:mb-10 md:items-end`;
 const Section = tw.div`md:w-1/2`;
-const Sub = tw.span`ml-6 md:ml-0 text-sm md:text-base text-gray-300 tracking-wider font-extrabold`;
-const Title = tw.h1`ml-6 md:ml-0 text-3xl md:text-5xl font-bold text-white mt-2`;
-const Description = tw.div`text-gray-300 ml-6 my-3 md:mx-12`;
+const Sub = tw.span`ml-6 md:ml-0 text-sm md:text-base text-white opacity-50 tracking-wider font-extrabold`;
+const Title = tw.h1`ml-6 md:ml-0 text-3xl md:text-5xl font-bold text-white mt-2 leading-none`;
+const Description = tw.div`text-gray-300 ml-6 mt-4 md:mx-12`;
 
 const DisplayContainer = tw.div`md:mx-40 mt-5 mb-8`;
 const Display = tw.form`bg-white rounded-xl p-6 md:p-12 shadow`;
@@ -45,7 +45,7 @@ const DropDownSelect = styled(RawDDSelect)`
 
 const DefaultButton = tw.button`bg-gray-200 border-transparent border-4 text-darkblue text-xs tracking-widest font-bold py-1 px-2 h-16 rounded-lg`;
 const Submit = styled(DefaultButton)`
-  ${tw`w-full hover:text-white hover:bg-darkblue shadow`}
+  ${tw`w-full hover:text-white hover:bg-darkblue hover:shadow-xl`}
 `;
 const BackButton = styled(DefaultButton)`
   ${tw`hidden md:block`}

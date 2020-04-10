@@ -23,7 +23,7 @@ const AppLink = tw.a`text-gray-500`;
 const BackLink = tw.a`absolute ml-10 md:ml-20 text-gray-300 left-0 top-0 -mt-10 font-bold hover:underline tracking-wide cursor-pointer`;
 
 const DetailsSection = tw.div``;
-const DetailsSectionTitle = tw.div`text-xl md:text-3xl font-bold mb-1 text-gray-900`;
+const DetailsSectionTitle = tw.div`text-xl md:text-3xl font-bold mb-1 text-gray-900 leading-none`;
 const DetailsSectionDescription = tw.div`text-gray-500`;
 
 const DisplayRow = tw.div`flex flex-wrap mt-6 lg:mt-10 lg:mb-6 -mx-3`;
@@ -39,7 +39,7 @@ const TwoThird = tw.div`lg:w-2/3 md:mr-4`;
 const Half = tw.div`lg:w-1/2`;
 
 const CTACard = tw.div`lg:w-1/2 mt-6 mx-6 p-6 md:mt-12 md:mx-12 md:p-12 rounded-xl bg-white`;
-const CTAButton = tw.a`cursor-pointer text-center inline-block bg-darkblue text-white text-sm p-4 rounded mt-4 md:mt-10 w-1/2 shadow-xl`;
+const CTAButton = tw.a`cursor-pointer font-bold text-center inline-block bg-darkblue text-white text-sm p-4 rounded mt-4 md:mt-10 w-1/2 shadow-xl`;
 
 const formatMoney = number => {
   const formatter = new Intl.NumberFormat("en-US", {

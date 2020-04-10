@@ -8,12 +8,12 @@ const SearchUseCaseContainer = tw.div`md:mx-40 mt-5 mb-10`;
 const SearchUseCaseDisplay = tw.div`bg-white rounded-xl p-6 md:p-12 shadow`;
 const SearchUseCase = tw.div`flex flex-col lg:flex-row mb-12 last:mb-0`;
 const SearchUseCaseTitle = tw.h2`text-2xl md:text-3xl font-bold`;
-const SearchUseCaseTitleSub = tw.div`text-gray-500 mb-6`;
+const SearchUseCaseTitleSub = tw.div`text-gray-500 mb-16`;
 const UseCaseContent = tw.div`lg:w-1/2`;
 const Image = tw.img`w-full mb-2 lg:mb-0 lg:w-1/2 lg:mr-10 object-cover h-40 lg:h-64 rounded-t-lg lg:rounded-lg`;
-const Heading = tw.div`text-lg mb-4 font-bold lg:text-2xl text-gray-900`;
+const Heading = tw.div`text-lg mb-4 font-bold lg:text-2xl text-gray-900 leading-none`;
 const Paragraph = tw.p`text-gray-500 mb-2`;
-const SearchLink = tw.a`block font-bold tracking-widest text-right p-2 text-gray-900 hover:text-darkblue cursor-pointer`;
+const SearchLink = tw.a`text-sm block font-bold tracking-widest py-2 text-gray-900 hover:text-darkblue cursor-pointer`;
 
 export default class SearchUseCaseComponent extends React.Component {
   state = {

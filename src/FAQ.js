@@ -17,56 +17,57 @@ const DetailsTitle = tw.div`leading-none text-xl md:text-3xl font-bold text-gray
 const DetailsDescription = tw.div`text-gray-500`;
 const Divider = tw.div`border border-solid border-gray-400 h-px mx-2 md:mx-8 my-3`;
 
-
 export default class FAQ extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: {
+        fields: {}
+      }
+    };
+  }
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            data: {
-                fields: {}
-            }
-        };
-    }
+  async componentDidMount() {
+    const resp = await butter.page.retrieve("*", "faq");
+    this.setState(resp.data);
+  }
 
-    async componentDidMount() {
-        const resp = await butter.page.retrieve('*', 'faq');
-        this.setState(resp.data);
-    }
+  render() {
+    const faqData = this.state.data;
 
-    render() {
-        const faqData = this.state.data;
-
-        const faqs = faqData.fields &&
-            faqData.fields.faq &&
-            faqData.fields.faq.map( (faq, i) => {
-            return (
-                <div key={i}>
-                    <Details>
-                        <DetailsTitle>{faq.question}</DetailsTitle>
-                        <DetailsDescription>{faq.answer}</DetailsDescription>
-                    </Details>
-                    {i!==faqData.fields.faq.length-1 && <Divider/>}
-                </div>
-            )
-        });
-
+    const faqs =
+      faqData.fields &&
+      faqData.fields.faq &&
+      faqData.fields.faq.map((faq, i) => {
         return (
-            <PageContainer>
-                <Nav/>
-                <BodyContainer>
-                    <Hero className="background-gradient">
-                        <div><Title>Frequently Asked Questions</Title></div>
-                        <div><Sub>{faqData.fields && faqData.fields.description}</Sub></div>
-                    </Hero>
-                    <DisplayContainer>
-                        {faqs && (<Display>
-                            {faqs}
-                        </Display>)}
-                    </DisplayContainer>
-                </BodyContainer>
-                <Footer background/>
-            </PageContainer>
-        )
-    }
+          <div key={i}>
+            <Details>
+              <DetailsTitle>{faq.question}</DetailsTitle>
+              <DetailsDescription>{faq.answer}</DetailsDescription>
+            </Details>
+            {i !== faqData.fields.faq.length - 1 && <Divider />}
+          </div>
+        );
+      });
+
+    return (
+      <PageContainer>
+        <Nav />
+        <BodyContainer>
+          <Hero className="background-gradient">
+            <div>
+              <Title>Frequently Asked Questions</Title>
+            </div>
+            <div>
+              <Sub>{faqData.fields && faqData.fields.description}</Sub>
+            </div>
+          </Hero>
+          <DisplayContainer>
+            {faqs && <Display>{faqs}</Display>}
+          </DisplayContainer>
+        </BodyContainer>
+        <Footer background />
+      </PageContainer>
+    );
+  }
 }
