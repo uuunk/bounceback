@@ -11,7 +11,7 @@
     "@testing-library/user-event": "^7.1.2",
     "buttercms": "^1.2.2",
     "history": "^4.10.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "node-sass": "^4.13.1",
     "query-string": "^6.11.1",
     "react": "^16.13.1",
